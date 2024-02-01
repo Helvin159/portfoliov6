@@ -5,6 +5,8 @@ import About from './Routes/About';
 import Featured from './Routes/Featured';
 import Contact from './Routes/Contact';
 
+import './css/style.css';
+
 const App = () => {
 	return (
 		<Routes>
