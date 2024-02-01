@@ -10,9 +10,9 @@ const HomeHero = () => {
 			<div className='hero__container__location'>
 				<p>Methuen, MA USA</p>
 			</div>
-			<div>
+			<div className='hero__container__main'>
 				<Header />
-				<div className='hero__container__img'>
+				<div className='hero__container__main__img'>
 					<img src={heroImg} alt='Hero Img' />
 				</div>
 			</div>
