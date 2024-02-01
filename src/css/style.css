@@ -99,19 +99,22 @@ body {
   .hero__container__main__stats {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 5rem 1rem;
     text-align: center; }
     .hero__container__main__stats .stat {
       width: 25%; }
-      .hero__container__main__stats .stat h3 {
-        font-size: 48px;
-        font-weight: 600;
-        text-align: center;
-        margin: 0; }
-      .hero__container__main__stats .stat p {
-        font-size: 20px;
-        font-weight: 300;
-        text-align: center;
+      .hero__container__main__stats .stat__copy {
+        width: 50%;
         margin: 0 auto; }
+        .hero__container__main__stats .stat__copy h3 {
+          font-size: 48px;
+          font-weight: 600;
+          text-align: left;
+          margin: 0; }
+        .hero__container__main__stats .stat__copy p {
+          font-size: 20px;
+          font-weight: 300;
+          text-align: left;
+          margin: 0 auto; }
