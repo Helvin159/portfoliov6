@@ -10,8 +10,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: var(--primary-font);
-  overflow-x: hidden; }
+  font-family: var(--primary-font); }
 
 .header {
   width: 100%;
