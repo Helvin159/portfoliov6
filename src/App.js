@@ -5,7 +5,6 @@ import About from './routes/About';
 import Featured from './routes/Featured';
 import Contact from './routes/Contact';
 
-// struggling to make routes work
 import './css/style.css';
 
 const App = () => {
