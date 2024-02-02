@@ -20,12 +20,18 @@
 		position: relative;
 
 		& .service {
-			& span {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			& p {
 				font-size: 40px;
 				color: #fff;
 				font-weight: 200;
 				line-height: 44px;
-				padding: 0 1rem;
+				padding: 0 0.8rem;
 				margin: 0;
 			}
 		}

@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router';
 const FeaturedGallery = () => {
 	const navigate = useNavigate();
 	const handleOnClick = () => navigate('/featured');
+	const detailsOnClick = (url) => navigate(`/${url}`);
 
 	return (
 		<div className='featured__gallery'>
@@ -15,15 +16,27 @@ const FeaturedGallery = () => {
 			<div className='featured__gallery__items'>
 				<div className='featured__gallery__items__item'>
 					<img src={img1} alt='imgs' />
+					<div className='overlay'>
+						<button onClick={detailsOnClick}>see details</button>
+					</div>
 				</div>
 				<div className='featured__gallery__items__item'>
 					<img src={img2} alt='imgs' />
+					<div className='overlay'>
+						<button>see details</button>
+					</div>
 				</div>
 				<div className='featured__gallery__items__item'>
 					<img src={img3} alt='imgs' />
+					<div className='overlay'>
+						<button>see details</button>
+					</div>
 				</div>
 				<div className='featured__gallery__items__item'>
 					<img src={img1} alt='imgs' />
+					<div className='overlay'>
+						<button>see details</button>
+					</div>
 				</div>
 			</div>
 			<div className='featured__gallery__btn'>

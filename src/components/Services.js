@@ -10,18 +10,19 @@ const Services = () => {
 			<div className='services__blocks'>
 				<div className='service'>
 					<img src={svg1} alt='Angle Up' />
-					<span>Front-End</span>
+					<p>Front-End</p>
 				</div>
 				<div className='service'>
 					<img src={svg1} alt='Angle Up' />
-					<span>ReactJs</span>
+					<p>ReactJs</p>
 				</div>
 				<div className='service'>
 					<img src={svg1} alt='Angle Up' />
-					<span>Javascript</span>
+					<p>Javascript</p>
 				</div>
 				<div className='service'>
-					<img src={svg1} alt='Angle Up' /> <span>SASS</span>
+					<img src={svg1} alt='Angle Up' />
+					<p>SASS</p>
 				</div>
 			</div>
 		</div>
