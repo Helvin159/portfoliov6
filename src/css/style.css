@@ -86,19 +86,30 @@ main {
     justify-content: space-between;
     align-items: center;
     margin: 0; }
+    @media (max-width: 1024px) {
+      .hero__container__main__header {
+        flex-direction: column; } }
     .hero__container__main__header h1 {
       font-size: 64px;
       font-weight: 500;
       line-height: 72px;
       padding-right: 1rem;
       text-transform: uppercase; }
+      @media (max-width: 1024px) {
+        .hero__container__main__header h1 {
+          padding-right: 0;
+          text-align: center; } }
     .hero__container__main__header p {
       text-align: right;
       width: 75%;
       font-size: 18px;
       font-weight: 300;
       line-height: 22px; }
-  .hero__container__main__img {
+      @media (max-width: 1024px) {
+        .hero__container__main__header p {
+          text-align: center;
+          width: 100%; } }
+  .hero__container__main__img img {
     display: block;
     max-width: 100%; }
   .hero__container__main__stats {
