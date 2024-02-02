@@ -1,6 +1,6 @@
 .home__testimonial {
 	background-color: var(--secondary-bg-color);
-	padding: 0 1rem;
+	padding: 1rem 5rem;
 
 	&__card {
 		display: flex;
@@ -8,10 +8,12 @@
 		flex-wrap: nowrap;
 		justify-content: space-between;
 		align-items: center;
-		padding: 3rem 0 3rem 3rem;
+		margin: 0;
 
 		&__body {
 			width: 65%;
+			padding: 3rem 0;
+			margin: 0;
 			&__title {
 				color: #ffffff;
 				font-size: 24px;
@@ -19,6 +21,7 @@
 				font-weight: 300;
 				font-style: italic;
 				line-height: 26px;
+				margin: 1rem 0 0 0;
 			}
 
 			&__customer {
@@ -27,6 +30,8 @@
 				font-family: var(--primary-font);
 				font-weight: 300;
 				line-height: 20px;
+				padding: 1rem 0;
+				margin: 0;
 			}
 
 			&__copy {
@@ -35,6 +40,8 @@
 				font-family: var(--primary-font);
 				font-weight: 500;
 				line-height: 44px;
+				padding: 1rem 0 0 0;
+				margin: 0;
 			}
 		}
 

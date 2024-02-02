@@ -11,8 +11,8 @@ const HomeTestimonial = () => {
 						// Client said...
 					</p>
 					<p className='home__testimonial__card__body__copy'>
-						We loved working with Helvin Rymer. He has a great eye for detail.
-						He has a great eye for detail.
+						We loved every moment working with Helvin Rymer. He has a great eye
+						for detail.
 					</p>
 					<p className='home__testimonial__card__body__customer'>
 						- Jay Z, CEO of Roc Nation
