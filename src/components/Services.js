@@ -18,7 +18,7 @@ const Services = () => {
 				</div>
 				<div className='service'>
 					<img src={svg1} alt='Angle Up' />
-					<span>SASS</span>
+					<span>Javascript</span>
 				</div>
 				<div className='service'>
 					<img src={svg1} alt='Angle Up' /> <span>SASS</span>
