@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import avatarImg from '../assets/img/hero.jpeg';
 
@@ -11,6 +12,7 @@ const HomeTestimonial = () => {
 					</p>
 					<p className='home__testimonial__card__body__copy'>
 						We loved working with Helvin Rymer. He has a great eye for detail.
+						He has a great eye for detail.
 					</p>
 					<p className='home__testimonial__card__body__customer'>
 						- Jay Z, CEO of Roc Nation

@@ -143,7 +143,7 @@ main {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 0 3rem 4rem; }
+    padding: 3rem 0 3rem 3rem; }
     .home__testimonial__card__body {
       width: 65%; }
       .home__testimonial__card__body__title {
