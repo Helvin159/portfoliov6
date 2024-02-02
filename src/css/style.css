@@ -192,4 +192,5 @@ main {
       font-size: 40px;
       color: #fff;
       font-weight: 200;
-      line-height: 44px; }
+      line-height: 44px;
+      padding: 0 1rem; }
