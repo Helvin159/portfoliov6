@@ -1,0 +1,27 @@
+.services {
+	padding: 1.3rem 4.5rem 3rem 4.5rem;
+	background-color: var(--primary-bg-color);
+
+	& p.services__title {
+		color: #ffffff;
+		font-size: 24px;
+		font-weight: 300;
+		font-style: italic;
+		line-height: 26px;
+	}
+	&__blocks {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0;
+
+		& span {
+			font-size: 40px;
+			color: #fff;
+			font-weight: 200;
+			line-height: 44px;
+			padding: 0 1rem;
+		}
+	}
+}
