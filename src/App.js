@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router';
-import Outlet from './routes/Outlet';
-import Home from './routes/Home';
-import About from './routes/About';
-import Featured from './routes/Featured';
-import Contact from './routes/Contact';
+import Outlet from './Routes/Outlet';
+import Home from './Routes/Home';
+import About from './Routes/About';
+import Featured from './Routes/Featured';
+import Contact from './Routes/Contact';
 
 import './css/style.css';
 
