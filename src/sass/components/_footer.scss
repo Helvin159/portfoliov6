@@ -1,20 +1,23 @@
 .footer {
 	background-color: var(--primary-bg-color);
-
 	padding: 3.5rem 5rem;
 	margin: 0;
 
 	&__contact__container {
 		display: flex;
 		flex-direction: row;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		justify-content: space-evenly;
-
 		align-items: center;
 		margin: 0;
 
+		@media (max-width: 1024px) {
+			flex-direction: column-reverse;
+		}
+
 		&__form {
 			width: 50%;
+
 			&__header {
 				& p {
 					color: #ffffff;
@@ -27,13 +30,14 @@
 			}
 
 			& input {
-				width: 504px;
+				max-width: 504px;
+				width: 100%;
 				height: 54px;
 				padding: 0px 8px;
 				border: 1px solid #2e2e2e;
 				box-sizing: border-box;
 				border-radius: 2px;
-				background-color: #1d1d1d;
+				background-color: var(--input-bg-color);
 				color: #bebebe;
 				font-size: 20px;
 				font-family: var(--primary-font);
@@ -46,7 +50,8 @@
 
 			& button {
 				cursor: pointer;
-				width: 504px;
+				max-width: 504px;
+				width: 100%;
 				height: 46px;
 				padding: 0px 8px;
 				border: 1px solid #000000;

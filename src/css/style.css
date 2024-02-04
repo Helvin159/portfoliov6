@@ -197,6 +197,10 @@ main {
     padding: 1.6rem 0;
     margin: 0;
     position: relative; }
+    @media (max-width: 1238px) {
+      .services__blocks {
+        justify-content: space-evenly;
+        padding: 0 0; } }
     .services__blocks .service {
       display: flex;
       flex-direction: row;
@@ -204,6 +208,14 @@ main {
       justify-content: center;
       align-items: center;
       margin: 0; }
+      @media (max-width: 1238px) {
+        .services__blocks .service {
+          min-width: 350px;
+          max-width: 350px;
+          padding: 0;
+          justify-content: left;
+          margin: 1rem auto 1rem 0;
+          text-align: left; } }
       .services__blocks .service p {
         font-size: 40px;
         color: #fff;
@@ -301,10 +313,13 @@ main {
   .footer__contact__container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: 0; }
+    @media (max-width: 1024px) {
+      .footer__contact__container {
+        flex-direction: column-reverse; } }
     .footer__contact__container__form {
       width: 50%; }
       .footer__contact__container__form__header p {
@@ -315,13 +330,14 @@ main {
         font-style: italic;
         line-height: 26px; }
       .footer__contact__container__form input {
-        width: 504px;
+        max-width: 504px;
+        width: 100%;
         height: 54px;
         padding: 0px 8px;
         border: 1px solid #2e2e2e;
         box-sizing: border-box;
         border-radius: 2px;
-        background-color: #1d1d1d;
+        background-color: var(--input-bg-color);
         color: #bebebe;
         font-size: 20px;
         font-family: var(--primary-font);
@@ -332,7 +348,8 @@ main {
         margin-bottom: 1rem; }
       .footer__contact__container__form button {
         cursor: pointer;
-        width: 504px;
+        max-width: 504px;
+        width: 100%;
         height: 46px;
         padding: 0px 8px;
         border: 1px solid #000000;
