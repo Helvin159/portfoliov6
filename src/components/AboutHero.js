@@ -1,8 +1,9 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 
 import profileImg from '../assets/png/profile-img.png';
 
-const AboutHero = ({ title, copy }) => {
+const AboutHero = () => {
 	return (
 		<div className='about__hero'>
 			<div className='about__hero__profile'>
