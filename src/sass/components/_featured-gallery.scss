@@ -15,6 +15,13 @@
 		margin: 0;
 	}
 
+	&__border {
+		padding: 4.5rem 1.5rem 0;
+		& .border {
+			border: 0.5px solid var(--secondary-bg-color);
+		}
+	}
+
 	&__btn {
 		text-align: center;
 		padding: 2rem 0 4.5rem 0;
@@ -53,6 +60,48 @@
 			width: 628px;
 			height: 304px;
 			position: relative;
+
+			&__details {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				align-items: center;
+				margin: 0;
+				padding: 0;
+				max-height: 3.4rem;
+
+				&__title {
+					color: #ffffff;
+					font-size: 24px;
+					line-height: 32px;
+				}
+
+				&__services {
+					& span {
+						cursor: pointer;
+						max-width: 100px;
+						width: 100%;
+						max-height: 32px;
+						height: 100%;
+						padding: 7px 8px;
+						border: 0;
+						box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+						background-color: #000000;
+						color: #ffffff;
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 18px;
+						text-transform: uppercase;
+						outline: none;
+						margin-right: 8px;
+					}
+
+					& span:last-child {
+						margin-right: 0;
+					}
+				}
+			}
 
 			& img {
 				width: 100%;
@@ -100,5 +149,14 @@
 				opacity: 1;
 			}
 		}
+
+		&__item.item {
+			margin-top: 4.41rem;
+		}
+	}
+
+	&__items.more-projects {
+		padding-top: 0.4rem;
+		padding-bottom: 7.6rem;
 	}
 }

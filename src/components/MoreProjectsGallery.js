@@ -13,31 +13,105 @@ const MoreProjectsGallery = () => {
 	};
 
 	return (
-		<div className='featured__gallery'>
-			<p className='featured__gallery__title'>// Previous work</p>
-			<div className='featured__gallery__items'>
-				<div className='featured__gallery__items__item'>
+		<div className='featured__gallery '>
+			<div className='featured__gallery__border'>
+				<div className='border' />
+			</div>
+			<div className='featured__gallery__items more-projects'>
+				<div className='featured__gallery__items__item item'>
 					<img src={img1} alt='imgs' />
+					<div className='featured__gallery__items__item__details'>
+						<div className='featured__gallery__items__item__details__title'>
+							<p>hello</p>
+						</div>
+						<div className='featured__gallery__items__item__details__services'>
+							<span>UX Design</span>
+							<span>UI Design</span>
+							<span>Branding</span>
+						</div>
+					</div>
 					<div className='overlay'>
 						<button data-projectid='231383424' onClick={detailsOnClick}>
 							see details
 						</button>
 					</div>
 				</div>
-				<div className='featured__gallery__items__item'>
+				<div className='featured__gallery__items__item item'>
 					<img src={img2} alt='imgs' />
+					<div className='featured__gallery__items__item__details'>
+						<div className='featured__gallery__items__item__details__title'>
+							<p>hello</p>
+						</div>
+						<div className='featured__gallery__items__item__details__services'>
+							<span>UX Design</span>
+							<span>UI Design</span>
+							<span>UI Development</span>
+						</div>
+					</div>
 					<div className='overlay'>
 						<button onClick={detailsOnClick}>see details</button>
 					</div>
 				</div>
-				<div className='featured__gallery__items__item'>
+				<div className='featured__gallery__items__item item'>
 					<img src={img3} alt='imgs' />
+					<div className='featured__gallery__items__item__details'>
+						<div className='featured__gallery__items__item__details__title'>
+							<p>hello</p>
+						</div>
+						<div className='featured__gallery__items__item__details__services'>
+							<span>UX Design</span>
+							<span>UI Design</span>
+							<span>UI Development</span>
+						</div>
+					</div>
 					<div className='overlay'>
 						<button onClick={detailsOnClick}>see details</button>
 					</div>
 				</div>
-				<div className='featured__gallery__items__item'>
+				<div className='featured__gallery__items__item item'>
 					<img src={img1} alt='imgs' />
+					<div className='featured__gallery__items__item__details'>
+						<div className='featured__gallery__items__item__details__title'>
+							<p>hello</p>
+						</div>
+						<div className='featured__gallery__items__item__details__services'>
+							<span>UX Design</span>
+							<span>UI Design</span>
+							<span>UI Development</span>
+						</div>
+					</div>
+					<div className='overlay'>
+						<button onClick={detailsOnClick}>see details</button>
+					</div>
+				</div>
+				<div className='featured__gallery__items__item item'>
+					<img src={img2} alt='imgs' />
+					<div className='featured__gallery__items__item__details'>
+						<div className='featured__gallery__items__item__details__title'>
+							<p>hello</p>
+						</div>
+						<div className='featured__gallery__items__item__details__services'>
+							<span>UX Design</span>
+							<span>UI Design</span>
+							<span>UI Development</span>
+						</div>
+					</div>
+					<div className='overlay'>
+						<button onClick={detailsOnClick}>see details</button>
+					</div>
+				</div>
+				<div className='featured__gallery__items__item item'>
+					<img src={img3} alt='imgs' />
+					<div className='featured__gallery__items__item__details'>
+						<div className='featured__gallery__items__item__details__title'>
+							<p>hello</p>
+						</div>
+						<div className='featured__gallery__items__item__details__services'>
+							<span>UX Design</span>
+							<span>UI Design</span>
+							<span>UI Development</span>
+						</div>
+					</div>
 					<div className='overlay'>
 						<button onClick={detailsOnClick}>see details</button>
 					</div>
