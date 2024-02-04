@@ -2,6 +2,10 @@
 	background-color: var(--secondary-bg-color);
 	padding: 1rem 5rem;
 
+	@media (max-width: 768px) {
+		padding: 1rem 0;
+	}
+
 	&__card {
 		display: flex;
 		flex-direction: row;
@@ -10,18 +14,25 @@
 		align-items: center;
 		margin: 0;
 
+		@media (max-width: 970px) {
+			justify-content: start;
+			flex-direction: column-reverse;
+		}
+
 		&__body {
 			width: 65%;
 			padding: 3rem 0;
 			margin: 0;
+
+			@media (max-width: 970px) {
+				width: 70%;
+				margin: 0 auto;
+				text-align: center;
+			}
 			&__title {
-				color: #ffffff;
-				font-size: 24px;
-				font-family: var(--primary-font);
-				font-weight: 300;
-				font-style: italic;
-				line-height: 26px;
+				@include taglines;
 				margin: 1rem 0 0 0;
+				text-align: left;
 			}
 
 			&__customer {
