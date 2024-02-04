@@ -1,5 +1,10 @@
 @import './base/base';
 
+// Mixins
+@import './mixins/buttons';
+@import './mixins/headings';
+@import './mixins/text';
+
 // Components
 @import './components/header';
 @import './components/home-hero';
@@ -8,3 +13,4 @@
 @import './components/featured-gallery';
 @import './components/footer';
 @import './components/hero';
+@import './components/about-hero';
