@@ -2,6 +2,7 @@
 import React from 'react';
 import linkedIn from '../assets/svg/icon-linkedin.svg';
 import instagram from '../assets/svg/icon-instagram.svg';
+// import emailViaGmail from '../utils/emailViaGmail';
 
 const Footer = () => {
 	return (
@@ -12,15 +13,32 @@ const Footer = () => {
 						<p>// Drop Me A Line</p>
 					</div>
 					<form>
-						<input type='text' placeholder='YOUR NAME *' />
-						<input type='email' placeholder='YOUR EMAIL *' />
 						<input
 							type='text'
+							id='name'
+							name='name'
+							placeholder='YOUR NAME *'
+						/>
+						<input
+							type='email'
+							id='email'
+							name='email'
+							placeholder='YOUR EMAIL *'
+						/>
+						<input
+							type='text'
+							id='pjType'
+							name='pjType'
 							placeholder='WHAT TYPE OF PROJECT ARE YOU LOOKING FOR?'
 						/>
-						<input type='text' placeholder='WRITE A MESSAGE...' />
+						<input
+							type='text'
+							id='msg'
+							name='msg'
+							placeholder='WRITE A MESSAGE...'
+						/>
 					</form>
-					<button>send</button>
+					<button onClick={(e) => e.preventDefault()}>send</button>
 				</div>
 				<div className='footer__contact__container__contact footer__contact__container__sizing'>
 					<div className='footer__contact__container__contact__header'>
