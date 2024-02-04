@@ -27,14 +27,12 @@
 			align-items: center;
 			margin: 0;
 			padding-bottom: 0.25rem;
-			@media (max-width: 1024px) {
-				flex-direction: column;
-			}
+
+			@include flex-column-portrait-tablet;
 
 			& h1 {
-				font-size: 64px;
-				font-weight: 500;
-				line-height: 72px;
+				@include heading-one;
+
 				padding-right: 1rem;
 				text-transform: uppercase;
 
@@ -42,14 +40,15 @@
 					padding-right: 0;
 					text-align: center;
 				}
+
+				@include mobile-heading-one;
 			}
 
 			& p {
+				@include brief-summ;
+
 				text-align: right;
 				width: 75%;
-				font-size: 18px;
-				font-weight: 300;
-				line-height: 22px;
 				@media (max-width: 1024px) {
 					text-align: center;
 					width: 100%;
@@ -69,8 +68,21 @@
 			padding: 4.7rem 1rem;
 			text-align: center;
 
+			@media (max-width: 768px) {
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-evenly;
+			}
+
 			& .stat {
 				width: 25%;
+
+				@media (max-width: 768px) {
+					width: 50%;
+					margin: 1rem auto;
+					display: inline-block;
+				}
+
 				&__copy {
 					width: 50%;
 					margin: 0 auto;

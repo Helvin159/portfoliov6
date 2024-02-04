@@ -2,15 +2,9 @@
 	background-color: var(--primary-bg-color);
 	padding: 0 3.5rem;
 	margin: 0;
-	// border: 0.5px solid #fff;
 
 	& p.featured__gallery__title {
-		color: #ffffff;
-		font-size: 24px;
-		font-family: var(--primary-font);
-		font-weight: 300;
-		font-style: italic;
-		line-height: 26px;
+		@include taglines;
 		padding: 3.5rem 0 0 0;
 		margin: 0;
 	}
@@ -27,21 +21,7 @@
 		padding: 2rem 0 4.5rem 0;
 
 		& button {
-			cursor: pointer;
-			margin: 0.5rem auto;
-			width: 266px;
-			height: 46px;
-			padding: 0px 8px;
-			border: 0;
-			box-sizing: border-box;
-			box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
-			background-color: #000000;
-			color: #ffffff;
-			font-size: 20px;
-			font-family: var(--primary-font);
-			line-height: 26px;
-			text-transform: uppercase;
-			outline: none;
+			@include generic-btn;
 		}
 	}
 
@@ -120,29 +100,12 @@
 				transition: opacity 0.3s ease-in;
 
 				& button {
-					cursor: pointer;
-					width: 192px;
-					height: 46px;
-					padding: 0px 8px;
-					border: 0;
-					box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
-					background-color: #000000;
-					color: #ffffff;
-					font-size: 20px;
-					font-family: var(--primary-font);
-					line-height: 26px;
-					text-transform: uppercase;
-					outline: none;
-
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
+					@include overlay-btn;
 				}
-			}
 
-			& button:active {
-				outline: 0;
+				& button:active {
+					outline: 0;
+				}
 			}
 
 			& .overlay:hover {
