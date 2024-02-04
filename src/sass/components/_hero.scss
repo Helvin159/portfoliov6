@@ -1,0 +1,15 @@
+.hero {
+	background-color: var(--primary-bg-color);
+	padding: 5rem;
+	color: #ffffff;
+
+	& h1 {
+		font-size: 64px;
+		font-family: var(--primary-font);
+		margin: 0;
+		padding: 0;
+		width: 65%;
+		font-weight: 500;
+		line-height: 72px;
+	}
+}
