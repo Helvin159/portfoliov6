@@ -357,7 +357,7 @@ main {
 
 .footer {
   background-color: var(--secondary-bg-color);
-  padding: 3.5rem 0;
+  padding: 3.5rem 0 0.1rem;
   margin: 0; }
   .footer__contact__container {
     display: flex;
