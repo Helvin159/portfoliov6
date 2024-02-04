@@ -74,16 +74,24 @@ main {
   color: #fff;
   margin: 0;
   padding: 1rem 5rem 0 5rem; }
-  .hero__container__location p {
-    font-size: 20px;
-    margin: 14px auto 0 38px;
-    padding-top: 1.4rem; }
+  .hero__container__location {
+    padding-bottom: 0.2rem; }
+    .hero__container__location p {
+      font-size: 20px;
+      margin: 0;
+      margin-top: 16px;
+      padding-top: 1.4rem;
+      position: relative;
+      line-height: 1rem; }
+      .hero__container__location p span img {
+        margin: 0 6px -4px 0; }
   .hero__container__main__header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0; }
+    margin: 0;
+    padding-bottom: 0.25rem; }
     @media (max-width: 1024px) {
       .hero__container__main__header {
         flex-direction: column; } }

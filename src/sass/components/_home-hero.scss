@@ -5,10 +5,18 @@
 	padding: 1rem 5rem 0 5rem;
 
 	&__location {
+		padding-bottom: 0.2rem;
 		& p {
 			font-size: 20px;
-			margin: 14px auto 0 38px;
+			margin: 0;
+			margin-top: 16px;
 			padding-top: 1.4rem;
+			position: relative;
+			line-height: 1rem;
+
+			& span img {
+				margin: 0 6px -4px 0;
+			}
 		}
 	}
 	&__main {
@@ -18,6 +26,7 @@
 			justify-content: space-between;
 			align-items: center;
 			margin: 0;
+			padding-bottom: 0.25rem;
 			@media (max-width: 1024px) {
 				flex-direction: column;
 			}
