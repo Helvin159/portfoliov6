@@ -5,10 +5,12 @@ import img2 from '../assets/img/img2.jpeg';
 import img3 from '../assets/img/img3.jpeg';
 import { useNavigate } from 'react-router';
 
-const FeaturedGallery = () => {
+const MoreProjectsGallery = () => {
 	const navigate = useNavigate();
-	const handleOnClick = () => navigate('/featured');
-	const detailsOnClick = (url) => navigate(`/${url}`);
+	const detailsOnClick = (e) => {
+		console.log(e.target.dataset.projectid);
+		navigate(`/featured/${e.target.dataset.projectid}`);
+	};
 
 	return (
 		<div className='featured__gallery'>
@@ -17,7 +19,9 @@ const FeaturedGallery = () => {
 				<div className='featured__gallery__items__item'>
 					<img src={img1} alt='imgs' />
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='231383424' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 				<div className='featured__gallery__items__item'>
@@ -39,11 +43,8 @@ const FeaturedGallery = () => {
 					</div>
 				</div>
 			</div>
-			<div className='featured__gallery__btn'>
-				<button onClick={handleOnClick}>See more projects</button>
-			</div>
 		</div>
 	);
 };
 
-export default FeaturedGallery;
+export default MoreProjectsGallery;
