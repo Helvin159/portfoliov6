@@ -7,9 +7,9 @@ const Footer = () => {
 	return (
 		<div className='footer'>
 			<div className='footer__contact__container'>
-				<div className='footer__contact__container__form'>
+				<div className='footer__contact__container__form footer__contact__container__sizing'>
 					<div className='footer__contact__container__form__header'>
-						<p>// My Work</p>
+						<p>// Drop Me A Line</p>
 					</div>
 					<form>
 						<input type='text' placeholder='YOUR NAME *' />
@@ -22,7 +22,7 @@ const Footer = () => {
 					</form>
 					<button>send</button>
 				</div>
-				<div className='footer__contact__container__contact'>
+				<div className='footer__contact__container__contact footer__contact__container__sizing'>
 					<div className='footer__contact__container__contact__header'>
 						<p>// Lets Colaborate</p>
 					</div>
