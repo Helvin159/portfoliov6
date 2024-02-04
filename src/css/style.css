@@ -315,7 +315,7 @@ main {
         opacity: 1; }
 
 .footer {
-  background-color: var(--primary-bg-color);
+  background-color: var(--secondary-bg-color);
   padding: 3.5rem 0;
   margin: 0; }
   .footer__contact__container {
@@ -420,3 +420,16 @@ main {
       font-weight: 300;
       line-height: 20px;
       text-align: center; }
+
+.hero {
+  background-color: var(--primary-bg-color);
+  padding: 5rem;
+  color: #ffffff; }
+  .hero h1 {
+    font-size: 64px;
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    width: 65%;
+    font-weight: 500;
+    line-height: 72px; }
