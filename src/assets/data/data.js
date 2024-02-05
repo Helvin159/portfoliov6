@@ -208,7 +208,7 @@ export const projects = [
 		projectId: '1',
 		projectName: 'RollByADP',
 		workDone:
-			'This was a fun project. I worked in a 3 person team to replatform this site from a static site to a dynamic react site. I mainly worked on building components out of the existing templates. I was handed the original base code, to read and refactor to work with react and individual components.',
+			'In the three-team development setup, I played a key role in converting a jQuery site to ReactJS, focusing on the front end. Collaborating with teammates, we integrated ReactJS for enhanced performance. We also utilized Sitecore as the CMS for efficient content management. My responsibilities included translating design concepts into responsive and dynamic interfaces, contributing to the overall modernization of the web platform.',
 		screenshot: 'https://mrrymer.com/assets/projects/project_one.png',
 		languages: [
 			{ lang: 'JavaScript' },
