@@ -1,5 +1,8 @@
 @import './base/base';
 
+// Utilities
+@import './utilities/flex';
+
 // Mixins
 @import './mixins/buttons';
 @import './mixins/headings';
@@ -17,3 +20,5 @@
 @import './components/hero';
 @import './components/about-hero';
 @import './components/project-hero';
+@import './components/project-detail-cards';
+@import './components/project-detail-video';

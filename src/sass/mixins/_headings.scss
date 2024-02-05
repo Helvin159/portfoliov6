@@ -5,3 +5,10 @@
 	font-weight: 500;
 	line-height: 72px;
 }
+
+@mixin heading-three {
+	color: #ffffff;
+	font-size: 24px;
+	font-family: var(--primary-font);
+	line-height: 26px;
+}

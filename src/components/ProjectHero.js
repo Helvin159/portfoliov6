@@ -23,7 +23,7 @@ const ProjectHero = ({ name, img, about, langs }) => {
 				<img src={img} alt={name} />
 			</div>
 			<div className='project__hero__about'>
-				<h2>// About</h2>
+				<h2>// About the project</h2>
 				<p>{about}</p>
 			</div>
 		</div>

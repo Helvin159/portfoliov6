@@ -228,7 +228,17 @@ export const projects = [
 		projectId: '2',
 		projectName: 'Blog by RollByADP',
 		workDone:
-			'I assumed the role of the lead front-end developer for this project, where our primary objective was the implementation of Sitecore JSS for the site. I meticulously ensured pixel-perfect CSS implementation, meticulously aligning with the provided designs while also ensuring optimal responsiveness.',
+			'I assumed the role of the lead front-end developer for this project, where our primary objective was the implementation of Sitecore JSS for the site. I meticulously ensured pixel-perfect CSS implementation, meticulously aligning with the provided designs while ',
+		// also ensuring optimal responsiveness.',
+		responsibilityOneTitle: 'JQuery to ReactJs',
+		responsibilityOne:
+			"As a front-end developer, I led the migration from jQuery to ReactJS for our web app, integrating Sitecore's React SDK and optimizing component performance. Collaborating with back-end developers, I ensured,seamless",
+		//  integration with Sitecore CMS, contributing to a more modern and efficient application.",
+
+		responsibilityTwoTitle: 'Agile Work Environment',
+		responsibilityTwo:
+			'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
+		//  and sprint planning. This agile approach, coupled with Jira's organization, enabled us to adapt swiftly to changing requirements and deliver high-quality web applications iteratively.",
 		screenshot: 'https://mrrymer.com/assets/projects/project_two.png',
 		languages: [
 			{ lang: 'JavaScript' },
