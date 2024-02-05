@@ -9,7 +9,7 @@ const ProjectDetail = () => {
 	return (
 		<div>
 			{projects.map((i, k) => {
-				if (params.projectId === pjId) {
+				if (params.projectId.toString() === i.projectId.toString()) {
 					console.log(i);
 					return (
 						<div key={k}>
