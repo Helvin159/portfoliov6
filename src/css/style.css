@@ -783,7 +783,6 @@ main {
           line-height: 22px;
           margin: 0; }
   .project__cards__gallery {
-    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -792,11 +791,24 @@ main {
     text-align: center;
     justify-content: space-evenly;
     align-items: center;
-    padding: 2.5rem 4.15rem; }
+    padding: 2.5rem 4.15rem;
+    flex: 0 0 calc(100% / 3); }
+    @media (max-width: 768px) {
+      .project__cards__gallery {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem 0; } }
     .project__cards__gallery__card {
       width: calc(100% / 3);
       margin: 0;
       padding: 0; }
+      @media (max-width: 768px) {
+        .project__cards__gallery__card {
+          width: 100%;
+          margin-bottom: 1.5rem; }
+          .project__cards__gallery__card:last-child {
+            margin-bottom: 0; } }
       .project__cards__gallery__card img {
         max-width: 410px;
         width: 100%;
@@ -837,29 +849,44 @@ main {
       object-position: center; }
   .project__video__play__pause__container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 4rem;
+    right: 4rem;
+    bottom: 4.3rem;
     align-items: center;
+    opacity: 0;
     transition: opacity 0.3s ease-in; }
+    .project__video__play__pause__container:hover {
+      opacity: 1; }
     .project__video__play__pause__container__playBtn {
+      cursor: pointer;
       background-color: transparent;
       border: none;
       outline: 0;
       max-width: 96px;
       max-height: 96px;
-      width: 100%; }
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
       .project__video__play__pause__container__playBtn:active {
         outline: 0; }
       .project__video__play__pause__container__playBtn:focus {
         outline: 0; }
     .project__video__play__pause__container__pauseBtn {
+      cursor: pointer;
       background-color: transparent;
       border: none;
       outline: 0;
       max-width: 96px;
       max-height: 96px;
-      width: 100%; }
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none; }
       .project__video__play__pause__container__pauseBtn:active {
         outline: 0; }
       .project__video__play__pause__container__pauseBtn:focus {

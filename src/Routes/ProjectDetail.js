@@ -15,8 +15,6 @@ const ProjectDetail = () => {
 				const { projectId } = i;
 
 				if (params.projectId === projectId) {
-					console.log(i);
-
 					const {
 						projectName,
 						screenshot,
