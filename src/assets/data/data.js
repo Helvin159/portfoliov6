@@ -228,7 +228,7 @@ export const projects = [
 		projectId: '2',
 		projectName: 'Blog by RollByADP',
 		workDone:
-			'I was the lead front-end developer on this project. We worked on this to implement Sitecore JSS for the site. Pixel perfect CSS matching perfectly with designs and responsive!',
+			'I assumed the role of the lead front-end developer for this project, where our primary objective was the implementation of Sitecore JSS for the site. I meticulously ensured pixel-perfect CSS implementation, meticulously aligning with the provided designs while also ensuring optimal responsiveness.',
 		screenshot: 'https://mrrymer.com/assets/projects/project_two.png',
 		languages: [
 			{ lang: 'JavaScript' },
