@@ -314,8 +314,10 @@ main {
       border-radius: 2px;
       margin: 0;
       margin-top: 1.5rem;
-      width: 628px;
-      height: 304px;
+      max-width: 628px;
+      width: 100%;
+      max-height: 304px;
+      height: 100%;
       position: relative; }
       .featured__gallery__items__item__details {
         display: flex;
