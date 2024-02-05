@@ -321,8 +321,8 @@ main {
       border-radius: 2px;
       margin: 0;
       margin-top: 1.5rem;
-      max-width: 629px;
-      width: calc(100% / 2);
+      max-width: 630px;
+      width: calc(100% / 2.04);
       height: 304px;
       position: relative; }
       @media (max-width: 990px) {
