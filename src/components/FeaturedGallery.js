@@ -8,7 +8,8 @@ import { useNavigate } from 'react-router';
 const FeaturedGallery = () => {
 	const navigate = useNavigate();
 	const handleOnClick = () => navigate('/featured');
-	const detailsOnClick = (url) => navigate(`/${url}`);
+	const detailsOnClick = (e) =>
+		navigate(`/featured/${e.target.dataset.projectid}`);
 
 	return (
 		<div className='featured__gallery'>
@@ -17,25 +18,33 @@ const FeaturedGallery = () => {
 				<div className='featured__gallery__items__item'>
 					<img src={img1} alt='imgs' />
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='231383424' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 				<div className='featured__gallery__items__item'>
 					<img src={img2} alt='imgs' />
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='231383424' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 				<div className='featured__gallery__items__item'>
 					<img src={img3} alt='imgs' />
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='231383424' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 				<div className='featured__gallery__items__item'>
 					<img src={img1} alt='imgs' />
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='231383424' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 			</div>

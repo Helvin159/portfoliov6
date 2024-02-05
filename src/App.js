@@ -6,6 +6,7 @@ import Featured from './Routes/Featured';
 import Contact from './Routes/Contact';
 
 import './css/style.css';
+import ProjectDetail from './Routes/ProjectDetail';
 
 const App = () => {
 	return (
@@ -14,6 +15,7 @@ const App = () => {
 				<Route index element={<Home />} />
 				<Route path='about' element={<About />} />
 				<Route path='featured' element={<Featured />} />
+				<Route path='featured/:featuredId' element={<ProjectDetail />} />
 				<Route path='contact' element={<Contact />} />
 			</Route>
 		</Routes>
