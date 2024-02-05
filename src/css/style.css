@@ -650,3 +650,68 @@ main {
         @media (max-width: 1035px) {
           .about__hero__profile__img img {
             max-width: 80%; } }
+
+.project__hero {
+  background-color: var(--primary-bg-color);
+  padding: 4.5rem 5rem; }
+  .project__hero__back-btn {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: left; }
+    .project__hero__back-btn img {
+      cursor: pointer; }
+  .project__hero__header h1 {
+    color: #ffffff;
+    font-size: 64px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    line-height: 72px;
+    line-height: 65px; }
+  .project__hero__header__languages {
+    padding: 2rem 0; }
+    .project__hero__header__languages span {
+      cursor: pointer;
+      max-width: 100px;
+      width: 100%;
+      max-height: 32px;
+      height: 100%;
+      padding: 7px 8px;
+      border: 0;
+      box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+      background-color: #000000;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 18px;
+      text-transform: uppercase;
+      outline: none;
+      margin-right: 8px;
+      padding: 9px 8px; }
+  .project__hero__img {
+    text-align: center;
+    max-height: 400px;
+    max-width: 100%;
+    margin: 0 auto; }
+    .project__hero__img img {
+      width: 100%;
+      height: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      object-position: center; }
+  .project__hero__about {
+    max-width: 60%;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--secondary-bg-color); }
+    .project__hero__about h2 {
+      color: #ffffff;
+      font-size: 24px;
+      font-family: var(--primary-font);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 26px; }
+    .project__hero__about p {
+      color: #ffffff;
+      font-size: 18px;
+      font-family: var(--primary-font);
+      font-weight: 300;
+      line-height: 22px; }
