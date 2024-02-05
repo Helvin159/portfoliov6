@@ -31,7 +31,7 @@ const MoreProjectsGallery = () => {
 						</div>
 					</div>
 					<div className='overlay'>
-						<button data-projectid='231383424' onClick={detailsOnClick}>
+						<button data-projectid='1' onClick={detailsOnClick}>
 							see details
 						</button>
 					</div>
@@ -49,7 +49,9 @@ const MoreProjectsGallery = () => {
 						</div>
 					</div>
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='2' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 				<div className='featured__gallery__items__item item'>
@@ -65,7 +67,9 @@ const MoreProjectsGallery = () => {
 						</div>
 					</div>
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='3' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 				<div className='featured__gallery__items__item item'>
@@ -81,7 +85,9 @@ const MoreProjectsGallery = () => {
 						</div>
 					</div>
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='4' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 				<div className='featured__gallery__items__item item'>
@@ -97,7 +103,9 @@ const MoreProjectsGallery = () => {
 						</div>
 					</div>
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='5' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 				<div className='featured__gallery__items__item item'>
@@ -113,7 +121,9 @@ const MoreProjectsGallery = () => {
 						</div>
 					</div>
 					<div className='overlay'>
-						<button onClick={detailsOnClick}>see details</button>
+						<button data-projectid='1' onClick={detailsOnClick}>
+							see details
+						</button>
 					</div>
 				</div>
 			</div>

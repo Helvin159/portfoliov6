@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useParams } from 'react-router';
 
 import { projects } from '../assets/data/data';
+import ProjectHero from '../components/ProjectHero';
 
 const ProjectDetail = () => {
 	let params = useParams();
@@ -9,12 +10,19 @@ const ProjectDetail = () => {
 	return (
 		<div>
 			{projects.map((i, k) => {
-				if (params.projectId.toString() === i.projectId.toString()) {
+				const { projectId } = i;
+
+				if (params.projectId === projectId) {
 					console.log(i);
 					return (
-						<div key={k}>
-							<h1>{i.projectName}</h1>
-						</div>
+						<Fragment key={k}>
+							<ProjectHero
+								name={i.projectName}
+								img={i.screenshot}
+								about={i.workDone}
+								langs={i.languages}
+							/>
+						</Fragment>
 					);
 				} else {
 					return null;

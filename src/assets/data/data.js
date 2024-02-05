@@ -205,11 +205,11 @@ export const employers = [
 
 export const projects = [
 	{
-		projectId: 1,
+		projectId: '1',
 		projectName: 'RollByADP',
 		workDone:
 			'This was a fun project. I worked in a 3 person team to replatform this site from a static site to a dynamic react site. I mainly worked on building components out of the existing templates. I was handed the original base code, to read and refactor to work with react and individual components.',
-		screenshot: './assets/projects/project_one.png',
+		screenshot: 'https://mrrymer.com/assets/projects/project_one.png',
 		languages: [
 			{ lang: 'JavaScript' },
 			{ lang: 'JQuery' },
@@ -225,11 +225,11 @@ export const projects = [
 		url: 'https://rollbyadp.com',
 	},
 	{
-		projectId: 2,
+		projectId: '2',
 		projectName: 'Blog by RollByADP',
 		workDone:
 			'I was the lead front-end developer on this project. We worked on this to implement Sitecore JSS for the site. Pixel perfect CSS matching perfectly with designs and responsive!',
-		screenshot: './assets/projects/project_two.png',
+		screenshot: 'https://mrrymer.com/assets/projects/project_two.png',
 		languages: [
 			{ lang: 'JavaScript' },
 			{ lang: 'Html5' },
@@ -245,33 +245,33 @@ export const projects = [
 		url: 'https://blog.rollbyadp.com',
 	},
 	{
-		projectId: 3,
+		projectId: '3',
 		projectName: 'ADP.com (Content)',
 		workDone:
 			'I worked on content entry for this site on an international scale with Sitecore. We managed Chinese, Italian, German, and Swiss among other languages.',
-		screenshot: './assets/projects/project_five.png',
+		screenshot: 'https://mrrymer.com/assets/projects/project_five.png',
 		languages: [{ lang: 'Html5' }, { lang: 'CSS' }, { lang: 'JavaScript' }],
 		frameworks: [],
 		cms: ['Sitecore'],
 		url: 'https://ch.adp.com',
 	},
 	{
-		projectId: 4,
+		projectId: '4',
 		projectName: 'Criterion Ticketing',
 		workDone:
 			'I worked as part of a team on this project. My responsibilities included building components assigned to me, testing component for the component, and the functionality of the component. We worked with Vue3 as a framework.',
-		screenshot: './assets/projects/project_four.png',
+		screenshot: 'https://mrrymer.com/assets/projects/project_four.png',
 		languages: [{ lang: 'JavaScript' }, { lang: 'CSS' }, { lang: 'Html5' }],
 		frameworks: [{ framework: 'Vue3' }, { framework: 'Tailwind' }],
 		cms: [],
 		url: 'https://criterionticketing.com/',
 	},
 	{
-		projectId: 5,
+		projectId: '5',
 		projectName: 'Highland Home Loans',
 		workDone:
 			'For this project, I was tasked with building the entire front end and functionality. I was given designs to follow and build in separate components. The project was transfered to Crownpeak CMS and templated.',
-		screenshot: './assets/projects/project_three.png',
+		screenshot: 'https://mrrymer.com/assets/projects/project_three.png',
 		languages: [{ lang: 'JavaScript' }, { lang: 'Html5' }, { lang: 'CSS' }],
 		cms: ['Crownpeak'],
 		url: 'https://www.highlandhomeloans.com/',
