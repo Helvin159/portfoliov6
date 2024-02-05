@@ -16,7 +16,7 @@ const Header = () => {
 				<nav className='header__container__nav'>
 					<ul>
 						<li>
-							<Link to='/featured'>Featured</Link>
+							<Link to='/featured'>Projects</Link>
 						</li>
 						<li>
 							<Link to='/about'>About</Link>
