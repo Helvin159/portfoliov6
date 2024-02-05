@@ -1,0 +1,84 @@
+.project__cards {
+	background-color: var(--primary-bg-color);
+	padding-bottom: 2.2rem;
+
+	border-bottom: 1px solid var(--secondary-bg-color);
+
+	&__container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: baseline;
+		text-align: center;
+		padding: 0 4rem;
+
+		&__card {
+			width: calc(100% / 2);
+
+			@media (max-width: 768px) {
+				width: 100%;
+			}
+
+			&__img {
+				padding: 1.4rem 0.9rem;
+
+				& img {
+					max-width: 628px;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center;
+					border-radius: 5px;
+				}
+			}
+
+			&__summary {
+				padding: 2.5rem 1rem;
+				text-align: left;
+
+				& h3 {
+					@include heading-three;
+					margin: 0;
+					font-weight: 300;
+					padding: 0.8rem 0 1.15rem;
+					text-transform: uppercase;
+				}
+				& p {
+					@include brief-summ;
+					margin: 0;
+				}
+			}
+		}
+	}
+	&__gallery {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		text-align: center;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 2.5rem 4.15rem;
+
+		&__card {
+			width: calc(100% / 3);
+			margin: 0;
+			padding: 0;
+
+			& img {
+				max-width: 410px;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				border-radius: 5px;
+				margin: 0;
+				padding: 0;
+				border-radius: 5px;
+			}
+		}
+	}
+}

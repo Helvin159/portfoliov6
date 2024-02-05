@@ -17,6 +17,9 @@ main {
   margin: 0;
   padding: 0; }
 
+.flex {
+  display: flex; }
+
 .header {
   width: 100%;
   display: flex;
@@ -409,7 +412,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: baseline;
     margin: 0;
     padding: 0 5rem; }
     @media (max-width: 1024px) {
@@ -710,7 +713,8 @@ main {
       height: 100%;
       max-height: 400px;
       object-fit: cover;
-      object-position: center; }
+      object-position: center;
+      border-radius: 5px; }
   .project__hero__about {
     max-width: 60%;
     padding: 3.7rem 0 2rem 0;
@@ -732,3 +736,101 @@ main {
       line-height: 22px;
       margin: 0;
       padding: 1.08rem 0 1rem; }
+
+.project__cards {
+  background-color: var(--primary-bg-color);
+  padding-bottom: 2.2rem;
+  border-bottom: 1px solid var(--secondary-bg-color); }
+  .project__cards__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    padding: 0 4rem; }
+    .project__cards__container__card {
+      width: calc(100% / 2); }
+      @media (max-width: 768px) {
+        .project__cards__container__card {
+          width: 100%; } }
+      .project__cards__container__card__img {
+        padding: 1.4rem 0.9rem; }
+        .project__cards__container__card__img img {
+          max-width: 628px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 5px; }
+      .project__cards__container__card__summary {
+        padding: 2.5rem 1rem;
+        text-align: left; }
+        .project__cards__container__card__summary h3 {
+          color: #ffffff;
+          font-size: 24px;
+          font-family: var(--primary-font);
+          line-height: 26px;
+          margin: 0;
+          font-weight: 300;
+          padding: 0.8rem 0 1.15rem;
+          text-transform: uppercase; }
+        .project__cards__container__card__summary p {
+          color: #ffffff;
+          font-size: 18px;
+          font-family: var(--primary-font);
+          font-weight: 300;
+          line-height: 22px;
+          margin: 0; }
+  .project__cards__gallery {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2.5rem 4.15rem; }
+    .project__cards__gallery__card {
+      width: calc(100% / 3);
+      margin: 0;
+      padding: 0; }
+      .project__cards__gallery__card img {
+        max-width: 410px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        margin: 0;
+        padding: 0;
+        border-radius: 5px; }
+
+.project__video {
+  background-color: var(--primary-bg-color);
+  padding: 1.7rem 1rem; }
+  .project__video__header {
+    padding: 2rem 4rem 0.12rem;
+    text-align: right; }
+    .project__video__header h3 {
+      color: #ffffff;
+      font-size: 24px;
+      font-family: var(--primary-font);
+      line-height: 26px;
+      text-transform: uppercase;
+      font-weight: 300; }
+  .project__video__player {
+    margin: 0;
+    padding: 0 4rem 4.1rem;
+    text-align: center; }
+    .project__video__player video {
+      max-width: 1280px;
+      max-height: 612px;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0;
+      object-fit: cover;
+      object-position: center; }
