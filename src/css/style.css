@@ -660,22 +660,28 @@ main {
 
 .project__hero {
   background-color: var(--primary-bg-color);
-  padding: 4.5rem 5rem; }
+  padding: 3.6rem 5rem; }
   .project__hero__back-btn {
     width: 100%;
-    padding: 1rem 0;
+    padding: 0;
+    padding-bottom: 0.3rem;
+    margin: 0;
     text-align: left; }
     .project__hero__back-btn img {
-      cursor: pointer; }
+      cursor: pointer;
+      margin: 0; }
   .project__hero__header h1 {
     color: #ffffff;
     font-size: 64px;
     font-family: var(--primary-font);
     font-weight: 500;
     line-height: 72px;
-    line-height: 65px; }
+    line-height: 30px;
+    text-transform: uppercase; }
   .project__hero__header__languages {
-    padding: 2rem 0; }
+    padding: 0;
+    padding-bottom: 3.6rem;
+    margin: 0; }
     .project__hero__header__languages span {
       cursor: pointer;
       max-width: 100px;
@@ -707,7 +713,7 @@ main {
       object-position: center; }
   .project__hero__about {
     max-width: 60%;
-    padding: 2rem 0;
+    padding: 3.7rem 0 2rem 0;
     border-bottom: 1px solid var(--secondary-bg-color); }
     .project__hero__about h2 {
       color: #ffffff;
@@ -715,10 +721,14 @@ main {
       font-family: var(--primary-font);
       font-weight: 300;
       font-style: italic;
-      line-height: 26px; }
+      line-height: 26px;
+      padding: 1.3rem 0 0;
+      margin: 0; }
     .project__hero__about p {
       color: #ffffff;
       font-size: 18px;
       font-family: var(--primary-font);
       font-weight: 300;
-      line-height: 22px; }
+      line-height: 22px;
+      margin: 0;
+      padding: 1.08rem 0 1rem; }
