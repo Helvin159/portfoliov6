@@ -9,13 +9,15 @@ const ProjectDetail = () => {
 	return (
 		<div>
 			{projects.map((i, k) => {
-				if (+params.projectId === +i.projectId) {
+				if (params.projectId === pjId) {
 					console.log(i);
 					return (
-						<div>
+						<div key={k}>
 							<h1>{i.projectName}</h1>
 						</div>
 					);
+				} else {
+					return null;
 				}
 			})}
 		</div>
