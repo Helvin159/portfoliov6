@@ -42,7 +42,7 @@ const ProjectDetail = () => {
 								respOneTitle={responsibilityOneTitle}
 								respTwoTitle={responsibilityTwoTitle}
 							/>
-							<ProjectDetailVideo />
+							<ProjectDetailVideo videoPoster={screenshot} />
 						</Fragment>
 					);
 				} else {
