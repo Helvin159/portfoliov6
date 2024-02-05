@@ -3,7 +3,8 @@ import { useParams } from 'react-router';
 
 const ProjectDetail = () => {
 	let params = useParams();
-	console.log(params, 'component params');
+
+	console.log(params.projectId, 'component params');
 
 	return (
 		<div>
