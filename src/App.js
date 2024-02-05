@@ -4,9 +4,9 @@ import Home from './Routes/Home';
 import About from './Routes/About';
 import Featured from './Routes/Featured';
 import Contact from './Routes/Contact';
+import ProjectDetail from './Routes/ProjectDetail';
 
 import './css/style.css';
-import ProjectDetail from './Routes/ProjectDetail';
 
 const App = () => {
 	return (
