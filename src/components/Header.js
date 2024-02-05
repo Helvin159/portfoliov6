@@ -9,23 +9,38 @@ const Header = () => {
 		<div className='header'>
 			<div className='header__container'>
 				<div className='header__container__title'>
-					<Link to={'/'}>Helvin Rymer</Link>
+					<Link to={'/'}>Mr. Rymer</Link>
 				</div>
 			</div>
 			<div className='header__container'>
-				<nav className='header__container__nav'>
-					<ul>
-						<li>
-							<Link to='/featured'>Projects</Link>
-						</li>
-						<li>
-							<Link to='/about'>About</Link>
-						</li>
-						<li>
-							<button onClick={handleOnClick}>Contact</button>
-						</li>
-					</ul>
-				</nav>
+				<div className='header__container__navs'>
+					<nav className='header__container__navs__desktop'>
+						<ul>
+							<li>
+								<Link to='/featured'>Projects</Link>
+							</li>
+							<li>
+								<Link to='/about'>About</Link>
+							</li>
+							<li>
+								<button onClick={handleOnClick}>Contact</button>
+							</li>
+						</ul>
+					</nav>
+					<nav className='header__container__navs__mobile'>
+						<ul>
+							<li>
+								<Link to='/featured'>Projects</Link>
+							</li>
+							<li>
+								<Link to='/about'>About</Link>
+							</li>
+							<li>
+								<button onClick={handleOnClick}>Contact</button>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
 	);

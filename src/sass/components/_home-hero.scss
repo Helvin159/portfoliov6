@@ -2,7 +2,11 @@
 	background-color: var(--primary-bg-color);
 	color: #fff;
 	margin: 0;
-	padding: 1rem 5rem 0 5rem;
+	padding: 1rem 5rem 0;
+
+	@media (max-width: 575.5px) {
+		padding: 1rem 1rem 0;
+	}
 
 	&__location {
 		padding-bottom: 0.2rem;
@@ -68,24 +72,31 @@
 			padding: 4.7rem 1rem;
 			text-align: center;
 
-			@media (max-width: 768px) {
+			@media (max-width: 767.98px) {
 				flex-wrap: wrap;
-				align-items: center;
+				align-items: baseline;
 				justify-content: space-evenly;
+			}
+
+			@media (max-width: 575.5px) {
+				padding: 4.7rem 0;
 			}
 
 			& .stat {
 				width: 25%;
 
-				@media (max-width: 768px) {
-					width: 50%;
+				@media (max-width: 767.98px) {
+					width: calc(100% / 2);
 					margin: 1rem auto;
-					display: inline-block;
 				}
 
 				&__copy {
-					width: 50%;
+					width: calc(100% / 2);
 					margin: 0 auto;
+
+					// @media (max-width:575.5px){
+					// 	width: ;
+					// }
 					& h3 {
 						font-size: 48px;
 						font-weight: 600;

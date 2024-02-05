@@ -3,6 +3,10 @@
 	padding: 0 5rem;
 	margin: 0;
 
+	@media (max-width: 575.5px) {
+		padding: 0 1rem;
+	}
+
 	& p.featured__gallery__title {
 		@include taglines;
 		padding: 3.5rem 0 0 0;
@@ -34,7 +38,7 @@
 		align-items: baseline;
 		margin: 0;
 
-		@media (max-width: 990px) {
+		@media (max-width: 992px) {
 			justify-content: space-evenly;
 		}
 
@@ -47,8 +51,13 @@
 			height: 304px;
 			position: relative;
 
-			@media (max-width: 990px) {
+			@media (max-width: 992px) {
 				width: 100%;
+			}
+
+			@media (max-width: 575.5px) {
+				height: auto;
+				padding-bottom: 1rem;
 			}
 
 			&__details {
@@ -61,13 +70,27 @@
 				padding: 0;
 				max-height: 3.4rem;
 
+				@media (max-width: 575.5px) {
+					flex-direction: column;
+				}
+
 				&__title {
 					color: #ffffff;
 					font-size: 24px;
 					line-height: 32px;
+
+					@media (max-width: 575.5px) {
+						width: 100%;
+						& p {
+							text-align: left;
+						}
+					}
 				}
 
 				&__services {
+					@media (max-width: 575.5px) {
+						width: 100%;
+					}
 					& span {
 						cursor: pointer;
 						max-width: 100px;

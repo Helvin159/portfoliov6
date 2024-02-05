@@ -5,14 +5,28 @@
 	justify-content: space-between;
 	margin: 0;
 	background-color: var(--primary-bg-color);
+	// border-bottom: 1px solid white;
 
 	&__container {
 		color: #ffffff;
-		width: 40%;
+		width: calc(100% / 2);
+		position: relative;
+
+		@media (max-width: 575.5px) {
+			width: 100%;
+
+			// &:last-child {
+			// display: none;
+			// }
+		}
 
 		&__title {
 			color: #ffffff;
 			padding: 1.8rem 0 1rem 5rem;
+
+			@media (max-width: 575.5px) {
+				padding-left: 1rem;
+			}
 
 			& a {
 				text-decoration: none;
@@ -23,29 +37,81 @@
 			}
 		}
 
-		&__nav {
-			& ul {
-				text-align: center;
-				list-style-type: none;
-				padding: 0.5rem 0 0 2rem;
-			}
-
-			& li {
-				text-align: center;
-				display: inline-block;
-				list-style-type: none;
-				margin: 0;
-
-				& a {
-					text-decoration: none;
-					font-size: 18px;
-					line-height: 22px;
-					margin-right: 68px;
-					color: #ffffff;
+		&__navs {
+			&__desktop {
+				@media (max-width: 575.5px) {
+					display: none;
 				}
 
-				& button {
-					@include header-btn;
+				& ul {
+					text-align: center;
+					list-style-type: none;
+					padding: 0.5rem 0 0 2rem;
+				}
+
+				& li {
+					text-align: center;
+					display: inline-block;
+					list-style-type: none;
+					margin: 0;
+
+					& a {
+						text-decoration: none;
+						font-size: 18px;
+						line-height: 22px;
+						margin-right: 68px;
+						color: #ffffff;
+					}
+
+					& button {
+						@include header-btn;
+					}
+				}
+			}
+
+			&__mobile {
+				width: 9rem;
+				position: absolute;
+				top: 4.5rem;
+				right: 0;
+				background-color: rgba(0, 0, 0, 0.95);
+				display: none;
+
+				// @media (max-width: 575.5px) {
+				// 	display: block;
+				// }
+
+				& ul {
+					list-style-type: none;
+					padding: 0;
+				}
+
+				& li {
+					text-align: center;
+					list-style-type: none;
+					margin: 1rem 0;
+					width: 100%;
+					padding: 0 0 1rem;
+					border-bottom: 1px solid var(--secondary-bg-color);
+
+					&:last-child {
+						border-bottom: none;
+						padding-bottom: 0;
+					}
+
+					& a {
+						text-decoration: none;
+						font-size: 18px;
+						line-height: 22px;
+
+						color: #ffffff;
+					}
+
+					& button {
+						@include header-btn;
+
+						margin: 0;
+					}
 				}
 			}
 		}

@@ -21,7 +21,7 @@
 			text-align: center;
 		}
 
-		@media (max-width: 768px) {
+		@media (max-width: 767.98px) {
 			width: 90%;
 		}
 		&__bio {
@@ -48,7 +48,7 @@
 
 				@include mobile-brief-summ;
 
-				@media (max-width: 1035) {
+				@media (max-width: 1035px) {
 					padding: 1rem;
 				}
 			}
@@ -61,14 +61,30 @@
 				text-align: left;
 			}
 
+			@media (max-width: 575.5px) {
+				margin: 2rem auto;
+				text-align: center;
+			}
+
 			& p {
 				padding: 1rem 0 0;
+				@media (max-width: 575.5px) {
+					text-align: left;
+				}
 			}
 
 			& button {
 				@include about-btn-list;
 				margin-right: 1rem;
 				margin-bottom: 1rem;
+
+				@media (max-width: 575.5px) {
+					margin: 0 auto 1rem;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
 			}
 
 			// & button:last-child {

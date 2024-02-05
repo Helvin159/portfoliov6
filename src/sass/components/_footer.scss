@@ -14,10 +14,10 @@
 
 		@include flex-column-reverse-portrait-tablet;
 
-		@media (max-width: 768px) {
+		@media (max-width: 767.98px) {
 		}
 
-		@media (max-width: 768px) {
+		@media (max-width: 767.98px) {
 			padding: 0;
 		}
 
@@ -34,13 +34,9 @@
 				max-width: 50%;
 			}
 
-			@media (max-width: 768px) {
+			@media (max-width: 767.98px) {
 				width: 75%;
 			}
-
-			// @media (max-width: 412px) {
-			// 	width: 80%;
-			// }
 		}
 
 		&__form {
@@ -91,7 +87,7 @@
 				& .links {
 					padding-bottom: 1rem;
 
-					@media (max-width: 412px) {
+					@media (max-width: 575.5px) {
 						padding-bottom: 0;
 					}
 
@@ -112,7 +108,7 @@
 			& .social-media {
 				padding-top: 2.5rem;
 
-				@media (max-width: 412px) {
+				@media (max-width: 575.5px) {
 					padding-top: 0.5rem;
 					padding-bottom: 1.5rem;
 				}
