@@ -18,6 +18,7 @@ const ProjectDetailCards = ({
 	portraitS2,
 	portraitS3,
 }) => {
+	const comingSoon = 'coming soon...';
 	return (
 		<div className='project__cards'>
 			<div className='project__cards__container'>
@@ -27,7 +28,7 @@ const ProjectDetailCards = ({
 					</div>
 					<div className='project__cards__container__card__summary'>
 						<h3>{`About ${respOneTitle}`}</h3>
-						<p>{respOne}</p>
+						<p>{respOne ? respOne : comingSoon}</p>
 					</div>
 				</div>
 				<div className='project__cards__container__card'>
@@ -36,7 +37,7 @@ const ProjectDetailCards = ({
 					</div>
 					<div className='project__cards__container__card__summary'>
 						<h3>{`About ${respTwoTitle}`}</h3>
-						<p>{respTwo}</p>
+						<p>{respTwo ? respTwo : comingSoon}</p>
 					</div>
 				</div>
 			</div>
