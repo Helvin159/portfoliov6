@@ -350,11 +350,15 @@ export const projects = [
 		},
 		screenshots: {
 			landscape: {
-				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FCriterionTicketing%2Flandscape%2Fproject_four.png?alt=media&token=368edb53-e88c-48fb-bc11-865ac3865a1b',
-				s2: null,
-				s3: null,
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FCriterionTicketing%2Flandscape%2FScreenshot%202024-02-06%20at%206.17.51%E2%80%AFPM.png?alt=media&token=c34f0ff3-aa92-4d29-a769-4f15e02b1a35',
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FCriterionTicketing%2Flandscape%2FScreenshot%202024-02-06%20at%206.18.11%E2%80%AFPM.png?alt=media&token=8259228e-7f4a-433a-80cf-5354bf51470e',
+				s3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FCriterionTicketing%2Flandscape%2FScreenshot%202024-02-06%20at%206.18.41%E2%80%AFPM.png?alt=media&token=6b02435c-ab02-476a-845c-9fa104e29a0c',
 			},
-			portrait: { s1: null, s2: null, s3: null },
+			portrait: {
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FCriterionTicketing%2Fportrait%2Fcriterionticketing.com_(iPad%20Mini)%20(1).png?alt=media&token=0565db13-d7d4-462d-b449-ed7ee9e30210',
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FCriterionTicketing%2Fportrait%2Fcriterionticketing.com_(iPad%20Mini)%20(2).png?alt=media&token=fb940394-0ddf-442d-9bf8-0090c5a6dd2c',
+				s3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FCriterionTicketing%2Fportrait%2Fcriterionticketing.com_(iPad%20Mini).png?alt=media&token=eb2fa72a-9750-40f1-9506-764818c391d1',
+			},
 		},
 		videos: {
 			video_one:
