@@ -270,7 +270,7 @@ export const projects = [
 		projectName: 'Criterion Ticketing',
 		workDone:
 			'I worked as part of a team on this project. My responsibilities included building components assigned to me, testing component for the component, and the functionality of the component. We worked with Vue3 as a framework.',
-		screenshot: 'https://mrrymer.com/assets/projects/project_four.png',
+		screenshot: 'https://lh3.googleusercontent.com/drive-viewer/AEYmBYSh93xk9d-mE4O0s6-nHHVaz8QFAcYF3qF1GlhRXQiQtk4VpsSTHhfnl-m7dtzi2lYDRtg_98kr9nRzvEw5i63Tf8r1Zw=s1600',
 		languages: [{ lang: 'JavaScript' }, { lang: 'CSS' }, { lang: 'Html5' }],
 		frameworks: [{ framework: 'Vue3' }, { framework: 'Tailwind' }],
 		cms: [],
