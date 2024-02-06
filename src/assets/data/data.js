@@ -209,7 +209,7 @@ export const projects = [
 		projectName: 'RollByADP',
 		workDone:
 			'In the three-team development setup, I played a key role in converting a jQuery site to ReactJS, focusing on the front end. Collaborating with teammates, we integrated ReactJS for enhanced performance. We also utilized Sitecore as the CMS for efficient content management. My responsibilities included translating design concepts into responsive and dynamic interfaces, contributing to the overall modernization of the web platform.',
-		screenshot: 'https://mrrymer.com/assets/projects/project_one.png',
+		screenshot: 'https://drive.google.com/file/d/1imfcxtX66VEdCNZE6jvDm5TCIo5djS3v/view?usp=drivesdk',
 		languages: [
 			{ lang: 'JavaScript' },
 			{ lang: 'JQuery' },
@@ -239,7 +239,7 @@ export const projects = [
 		responsibilityTwo:
 			'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
 		//  and sprint planning. This agile approach, coupled with Jira's organization, enabled us to adapt swiftly to changing requirements and deliver high-quality web applications iteratively.",
-		screenshot: 'https://mrrymer.com/assets/projects/project_two.png',
+		screenshot: 'https://drive.google.com/file/d/1imfcxtX66VEdCNZE6jvDm5TCIo5djS3v/view?usp=drivesdk',
 		languages: [
 			{ lang: 'JavaScript' },
 			{ lang: 'Html5' },
