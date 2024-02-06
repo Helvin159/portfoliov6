@@ -13,6 +13,10 @@
 		text-align: center;
 		padding: 0 4rem;
 
+		@media (max-width: 575.5px) {
+			padding: 0 1rem;
+		}
+
 		&__card {
 			width: calc(100% / 2);
 
@@ -22,6 +26,10 @@
 
 			&__img {
 				padding: 1.4rem 0.9rem;
+
+				@media (max-width: 575.5px) {
+					padding: 1.4rem 0;
+				}
 
 				& img {
 					max-width: 628px;
@@ -36,6 +44,10 @@
 			&__summary {
 				padding: 2.5rem 1rem;
 				text-align: left;
+
+				@media (max-width: 575.5px) {
+					padding: 0.5rem 1rem 2.5rem;
+				}
 
 				& h3 {
 					@include heading-three;
@@ -67,7 +79,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			padding: 2.5rem 0;
+			padding: 2.5rem 1rem;
 		}
 
 		&__card {

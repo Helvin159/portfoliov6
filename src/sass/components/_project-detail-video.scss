@@ -3,8 +3,12 @@
 	padding: 1.7rem 1rem;
 
 	&__header {
-		padding: 2rem 4rem 0.12rem;
+		padding: 2rem 4rem 0;
 		text-align: right;
+
+		@media (max-width: 575.5px) {
+			padding: 0 1rem;
+		}
 
 		& h3 {
 			@include heading-three;
@@ -18,6 +22,10 @@
 		padding: 0 4rem 4.1rem;
 		text-align: center;
 		position: relative;
+
+		@media (max-width: 575.5px) {
+			padding: 0 0 1rem;
+		}
 
 		& video {
 			max-width: 1280px;

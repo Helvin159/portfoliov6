@@ -849,6 +849,9 @@ main {
 .project__hero {
   background-color: var(--primary-bg-color);
   padding: 3.6rem 5rem; }
+  @media (max-width: 575.5px) {
+    .project__hero {
+      padding: 3.6rem 1rem; } }
   .project__hero__back-btn {
     width: 100%;
     padding: 0;
@@ -907,6 +910,10 @@ main {
     max-width: 60%;
     padding: 3.7rem 0 2rem 0;
     border-bottom: 1px solid var(--secondary-bg-color); }
+    @media (max-width: 575.5px) {
+      .project__hero__about {
+        max-width: 100%;
+        padding: 0.5rem 0 2rem; } }
     .project__hero__about h2 {
       color: #ffffff;
       font-size: 24px;
@@ -924,6 +931,10 @@ main {
       line-height: 22px;
       margin: 0;
       padding: 1.08rem 0 1rem; }
+      @media (max-width: 575.5px) {
+        .project__hero__about p {
+          padding: 0.5rem 0 1rem;
+          text-align: justify; } }
 
 .project__cards {
   background-color: var(--primary-bg-color);
@@ -937,6 +948,9 @@ main {
     align-items: baseline;
     text-align: center;
     padding: 0 4rem; }
+    @media (max-width: 575.5px) {
+      .project__cards__container {
+        padding: 0 1rem; } }
     .project__cards__container__card {
       width: calc(100% / 2); }
       @media (max-width: 767.98px) {
@@ -944,6 +958,9 @@ main {
           width: 100%; } }
       .project__cards__container__card__img {
         padding: 1.4rem 0.9rem; }
+        @media (max-width: 575.5px) {
+          .project__cards__container__card__img {
+            padding: 1.4rem 0; } }
         .project__cards__container__card__img img {
           max-width: 628px;
           width: 100%;
@@ -954,6 +971,9 @@ main {
       .project__cards__container__card__summary {
         padding: 2.5rem 1rem;
         text-align: left; }
+        @media (max-width: 575.5px) {
+          .project__cards__container__card__summary {
+            padding: 0.5rem 1rem 2.5rem; } }
         .project__cards__container__card__summary h3 {
           color: #ffffff;
           font-size: 24px;
@@ -986,7 +1006,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 2.5rem 0; } }
+        padding: 2.5rem 1rem; } }
     .project__cards__gallery__card {
       width: calc(100% / 3);
       margin: 0;
@@ -1012,8 +1032,11 @@ main {
   background-color: var(--primary-bg-color);
   padding: 1.7rem 1rem; }
   .project__video__header {
-    padding: 2rem 4rem 0.12rem;
+    padding: 2rem 4rem 0;
     text-align: right; }
+    @media (max-width: 575.5px) {
+      .project__video__header {
+        padding: 0 1rem; } }
     .project__video__header h3 {
       color: #ffffff;
       font-size: 24px;
@@ -1026,6 +1049,9 @@ main {
     padding: 0 4rem 4.1rem;
     text-align: center;
     position: relative; }
+    @media (max-width: 575.5px) {
+      .project__video__player {
+        padding: 0 0 1rem; } }
     .project__video__player video {
       max-width: 1280px;
       max-height: 612px;
