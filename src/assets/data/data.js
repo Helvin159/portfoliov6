@@ -216,19 +216,21 @@ export const projects = [
 		responsibilityTwoTitle: 'Agile Work Environment',
 		responsibilityTwo:
 			'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
-		screenshot:
-			'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0077.jpg',
 		screenshots: {
 			landscape: {
-				s1: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0077.jpg',
-				s2: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0078.jpg',
-				s3: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0079.jpg',
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADP%2Flandscape%2FIMG_0077.jpg?alt=media&token=228981f3-0864-4ec6-8897-d62fc45f0f8e',
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADP%2Flandscape%2FIMG_0078.jpg?alt=media&token=140f885b-812f-4240-a7e4-d35536d146a3',
+				s3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADP%2Flandscape%2FIMG_0079.jpg?alt=media&token=78ea61ae-e064-4c08-a040-bacc76f4e64f',
 			},
 			portrait: {
-				s1: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0074.jpg',
-				s2: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0075.jpg',
-				s3: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0076.jpg',
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADP%2Fportrait%2FIMG_0074.jpg?alt=media&token=cddcc665-d55a-45c3-b068-52833b328789',
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADP%2Fportrait%2FIMG_0075.jpg?alt=media&token=ad82fc16-12fd-4484-adda-2491db6e1565',
+				s3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADP%2Fportrait%2FIMG_0076.jpg?alt=media&token=5d93d9e7-c27d-4b9c-aa68-71f03c8ef2e2',
 			},
+		},
+		videos: {
+			video_one:
+				'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Videos%2FRollByADP%2Frollbyadp.mov?alt=media&token=632c5159-1c6e-4714-a2f8-a5964befbe40',
 		},
 		languages: [
 			{ lang: 'JavaScript' },
@@ -259,19 +261,22 @@ export const projects = [
 		responsibilityTwo:
 			'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
 		//  and sprint planning. This agile approach, coupled with Jira's organization, enabled us to adapt swiftly to changing requirements and deliver high-quality web applications iteratively.",
-		screenshot:
-			'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0069.jpg',
+
 		screenshots: {
 			landscape: {
-				s1: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0069.jpg',
-				s2: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0070.jpg',
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADPBlog%2Flandscape%2FIMG_0069.jpg?alt=media&token=d4338e49-c8a6-4ced-b80f-8888dbbae166',
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADPBlog%2Flandscape%2FIMG_0070.jpg?alt=media&token=9e74bae3-ac08-410f-9fee-5663519b9acf',
 				s3: null,
 			},
 			portrait: {
-				s1: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0071.jpg',
-				s2: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0072.jpg',
-				s3: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0073.jpg',
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADPBlog%2Fportrait%2FIMG_0071.jpg?alt=media&token=bdf46262-1a0d-47ae-a52d-404c6d6a83b3',
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADPBlog%2Fportrait%2FIMG_0072.jpg?alt=media&token=baf75fb5-aeb9-4447-8b80-69f544c07b00',
+				s3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADPBlog%2Fportrait%2FIMG_0073.jpg?alt=media&token=3c5d0081-d12e-4e9e-8de3-0170f8583ce4',
 			},
+		},
+		videos: {
+			video_one:
+				'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Videos%2FRollByADP%2Frollbyadp.mov?alt=media&token=632c5159-1c6e-4714-a2f8-a5964befbe40',
 		},
 		languages: [
 			{ lang: 'JavaScript' },
@@ -292,18 +297,21 @@ export const projects = [
 		projectName: 'ADP.com (Content)',
 		workDone:
 			'I worked on content entry for this site on an international scale with Sitecore. We managed Chinese, Italian, German, and Swiss among other languages.',
-		screenshot: 'https://screenandvids.mrrymer.com/assets/adp/s2.png',
 		screenshots: {
 			landscape: {
-				s1: 'https://screenandvids.mrrymer.com/assets/adp/s1.png',
-				s2: 'https://screenandvids.mrrymer.com/assets/adp/s2.png',
-				s3: 'https://screenandvids.mrrymer.com/assets/adp/s3.png',
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FADP%2Flandscape%2Fs1.png?alt=media&token=79500b4a-7fdc-487a-a252-a3bbb34b8304',
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FADP%2Flandscape%2Fs2.png?alt=media&token=96aeaf3e-60dc-4a7c-bc9f-67590d47c5fb',
+				s3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FADP%2Flandscape%2Fs3.png?alt=media&token=e51661eb-9bdf-457b-ba33-5b730a754f9e',
 			},
 			portrait: {
-				s1: 'https://screenandvids.mrrymer.com/assets/adp/s4.png',
-				s2: 'https://screenandvids.mrrymer.com/assets/adp/s5.png',
-				s3: 'https://screenandvids.mrrymer.com/assets/adp/s6.png',
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FADP%2Fportrait%2Fs4.png?alt=media&token=fa7eb6d4-2171-4637-99d4-8adee94eceb1',
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FADP%2Fportrait%2Fs5.png?alt=media&token=dbc90b27-925b-4de6-8b6a-e5f8793dc9b0',
+				s3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FADP%2Fportrait%2Fs6.png?alt=media&token=cd61b38a-86e2-431e-898c-8abe5b0d3561',
 			},
+		},
+		videos: {
+			video_one:
+				'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Videos%2FRollByADP%2Frollbyadp.mov?alt=media&token=632c5159-1c6e-4714-a2f8-a5964befbe40',
 		},
 		languages: [{ lang: 'Html5' }, { lang: 'CSS' }, { lang: 'JavaScript' }],
 		frameworks: [],
@@ -315,15 +323,17 @@ export const projects = [
 		projectName: 'Criterion Ticketing',
 		workDone:
 			'I worked as part of a team on this project. My responsibilities included building components assigned to me, testing component for the component, and the functionality of the component. We worked with Vue3 as a framework.',
-		screenshot:
-			'https://screenandvids.mrrymer.com/assets/CriterionTicketing/project_four.png',
 		screenshots: {
 			landscape: {
-				s1: 'https://screenandvids.mrrymer.com/assets/CriterionTicketing/project_four.png',
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FCriterionTicketing%2Flandscape%2Fproject_four.png?alt=media&token=368edb53-e88c-48fb-bc11-865ac3865a1b',
 				s2: null,
 				s3: null,
 			},
 			portrait: { s1: null, s2: null, s3: null },
+		},
+		videos: {
+			video_one:
+				'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Videos%2FRollByADP%2Frollbyadp.mov?alt=media&token=632c5159-1c6e-4714-a2f8-a5964befbe40',
 		},
 		languages: [{ lang: 'JavaScript' }, { lang: 'CSS' }, { lang: 'Html5' }],
 		frameworks: [{ framework: 'Vue3' }, { framework: 'Tailwind' }],
@@ -335,15 +345,17 @@ export const projects = [
 		projectName: 'Highland Home Loans',
 		workDone:
 			'For this project, I was tasked with building the entire front end and functionality. I was given designs to follow and build in separate components. The project was transfered to Crownpeak CMS and templated.',
-		screenshot:
-			'https://screenandvids.mrrymer.com/assets/HighlandHomeLoans/project_three.png',
 		screenshots: {
 			landscape: {
-				s1: 'https://screenandvids.mrrymer.com/assets/HighlandHomeLoans/project_three.png',
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FHighlandHomeLoans%2Flandscape%2Fproject_three.png?alt=media&token=0362dc7b-bdbe-4965-a052-eae36ccae553',
 				s2: null,
 				s3: null,
 			},
 			portrait: { s1: null, s2: null, s3: null },
+		},
+		videos: {
+			video_one:
+				'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Videos%2FRollByADP%2Frollbyadp.mov?alt=media&token=632c5159-1c6e-4714-a2f8-a5964befbe40',
 		},
 		languages: [{ lang: 'JavaScript' }, { lang: 'Html5' }, { lang: 'CSS' }],
 		cms: ['Crownpeak'],

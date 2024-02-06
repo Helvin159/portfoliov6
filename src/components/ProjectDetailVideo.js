@@ -4,7 +4,7 @@ import playImg from '../assets/svg/icon-play-arrow.svg';
 import pauseImg from '../assets/svg/icon-pause-presentation.svg';
 import blogVid from '../assets/video/blogbyrollbyadp.MP4';
 
-const ProjectDetailVideo = ({ videoPoster }) => {
+const ProjectDetailVideo = ({ videoPoster, videoUrl }) => {
 	const player = useRef(null);
 
 	const playVideo = () => player.current.play();
@@ -48,7 +48,7 @@ const ProjectDetailVideo = ({ videoPoster }) => {
 					onPlay={onPlayAction}
 					onEnded={onEndedAction}
 					onPause={onPauseAction}>
-					<source src={blogVid} type='video/mp4' />
+					<source src={videoUrl ? videoUrl : blogVid} type='video/mp4' />
 				</video>
 				<div className='project__video__play__pause__container'>
 					<button

@@ -17,7 +17,7 @@ const FeaturedGallery = () => {
 			<div className='featured__gallery__items'>
 				{projects.slice(0, 4).map((i, k) => (
 					<div className='featured__gallery__items__item' key={k}>
-						<img src={i.screenshot} alt={i.projectName} />
+						<img src={i.screenshots.landscape.s1} alt={i.projectName} />
 						<div className='overlay'>
 							<button data-projectid={i.projectId} onClick={detailsOnClick}>
 								see details

@@ -24,6 +24,7 @@ const ProjectDetail = () => {
 						responsibilityOneTitle,
 						responsibilityTwoTitle,
 						screenshots,
+						videos,
 					} = i;
 					return (
 						<Fragment key={k}>
@@ -45,7 +46,10 @@ const ProjectDetail = () => {
 								portraitS2={screenshots.portrait.s2}
 								portraitS3={screenshots.portrait.s3}
 							/>
-							<ProjectDetailVideo videoPoster={screenshots.landscape.s1} />
+							<ProjectDetailVideo
+								videoPoster={screenshots.landscape.s1}
+								videoUrl={videos.video_one}
+							/>
 						</Fragment>
 					);
 				} else {
