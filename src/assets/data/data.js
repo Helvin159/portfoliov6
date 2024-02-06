@@ -281,7 +281,7 @@ export const projects = [
 		projectName: 'Highland Home Loans',
 		workDone:
 			'For this project, I was tasked with building the entire front end and functionality. I was given designs to follow and build in separate components. The project was transfered to Crownpeak CMS and templated.',
-		screenshot: 'https://mrrymer.com/assets/projects/project_three.png',
+		screenshot: 'https://lh3.googleusercontent.com/drive-viewer/AEYmBYSrL_N53BCUWtyunqk3cNOf0UGJmiJUMFFL-hQuSn9DHr7JYA5iN8r6O9WM-06hZGRJMA8FnAfQ9sftp89WXcLbLhXVgQ=s1600',
 		languages: [{ lang: 'JavaScript' }, { lang: 'Html5' }, { lang: 'CSS' }],
 		cms: ['Crownpeak'],
 		url: 'https://www.highlandhomeloans.com/',
