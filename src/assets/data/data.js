@@ -209,7 +209,7 @@ export const projects = [
 		projectName: 'RollByADP',
 		workDone:
 			'In the three-team development setup, I played a key role in converting a jQuery site to ReactJS, focusing on the front end. Collaborating with teammates, we integrated ReactJS for enhanced performance. We also utilized Sitecore as the CMS for efficient content management. My responsibilities included translating design concepts into responsive and dynamic interfaces, contributing to the overall modernization of the web platform.',
-		screenshot: 'https://lh3.googleusercontent.com/drive-viewer/AEYmBYROzyB-VosRgq2GVJ3GxscITKvTm6oyV7bipihYJgzXok3cQJSnkCHkNCePS-WUF9W7gfpSJ4kGIKFocgPFa7J5MMvrzg=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYROzyB-VosRgq2GVJ3GxscITKvTm6oyV7bipihYJgzXok3cQJSnkCHkNCePS-WUF9W7gfpSJ4kGIKFocgPFa7J5MMvrzg=s1600',
+		screenshot: 'https://lh3.googleusercontent.com/drive-viewer/AEYmBYTDS8M3bjVELR9kvzGHAZyNi1tH3h-CCDngcJ6OM1J0ePzmEawuPjqS4FC4Wzw6XuAQFfMZ9qFp0ycbaA5LA7IuQnZq=s1600',
 		languages: [
 			{ lang: 'JavaScript' },
 			{ lang: 'JQuery' },
