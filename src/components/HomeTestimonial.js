@@ -1,8 +1,9 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
-import avatarImg from '../assets/img/hero.jpeg';
 
 const HomeTestimonial = () => {
+	const avatarImg =
+		'https://screenandvids.mrrymer.com/assets/Headshot/IMG_6403.JPG';
 	return (
 		<div className='home__testimonial'>
 			<div className='home__testimonial__card'>

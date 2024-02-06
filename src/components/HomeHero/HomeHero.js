@@ -2,11 +2,11 @@ import React from 'react';
 import Statistics from './components/Statistics';
 import Header from './components/Header';
 
-import heroImg from '../../assets/img/hero.jpeg';
-
 import minimap from '../../assets/svg/icon-map.svg';
 
 const HomeHero = () => {
+	const heroImg =
+		'https://screenandvids.mrrymer.com/assets/Cool%20Shots/IMG_0817.JPG';
 	return (
 		<div className='hero__container'>
 			<div className='hero__container__location'>

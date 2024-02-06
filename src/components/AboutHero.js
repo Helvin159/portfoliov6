@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 
-import profileImg from '../assets/png/profile-img.png';
-
 const AboutHero = () => {
+	const profileImg =
+		'https://screenandvids.mrrymer.com/assets/Cool%20Shots/IMG_0815.JPG';
 	return (
 		<div className='about__hero'>
 			<div className='about__hero__profile'>
@@ -13,8 +13,10 @@ const AboutHero = () => {
 					</h1>
 					<p>
 						I have always been fascinated by hip-hop culture and its influence
-						on art and design. As a front-end developer, I combine my love for
-						hip-hop with my coding skills to create visually stunning and
+						on art and design. For this website, I combine my love for hip-hop
+						with my coding skills to create visually stunning and engaging
+						portfolio that resonate with the vibrant energy and creativity
+						inherent in hip-hop culture.
 					</p>
 				</div>
 				<div className='about__hero__profile__skills'>
@@ -22,7 +24,8 @@ const AboutHero = () => {
 					<button>JavaScript</button>
 					<button>CSS</button>
 					<button>Html</button>
-					<button>UI/UX</button>
+					<button>ReactJs</button>
+					<button>SCSS</button>
 				</div>
 			</div>
 			<div className='about__hero__profile__img'>

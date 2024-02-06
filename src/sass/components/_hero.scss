@@ -2,11 +2,21 @@
 	background-color: var(--primary-bg-color);
 	padding: 5rem;
 
+	@media (max-width: 575.5px) {
+		padding: 3rem 1rem 1rem;
+	}
+
 	& h1 {
 		@include heading-one;
 
 		margin: 0;
 		padding: 0;
 		width: 65%;
+
+		@media (max-width: 575.5px) {
+			width: 100%;
+			margin: 0 auto;
+			font-size: 48px;
+		}
 	}
 }

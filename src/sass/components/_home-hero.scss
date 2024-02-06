@@ -51,11 +51,16 @@
 			& p {
 				@include brief-summ;
 
-				text-align: right;
+				align-self: flex-end;
+				text-align: justify;
 				width: 75%;
+				padding-bottom: 2rem;
 				@media (max-width: 1024px) {
 					text-align: center;
 					width: 100%;
+				}
+				@media (max-width: 575.5px) {
+					padding-bottom: auto;
 				}
 			}
 		}

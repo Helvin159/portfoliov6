@@ -9,6 +9,9 @@
 * {
   box-sizing: border-box; }
 
+html {
+  background-color: var(--primary-bg-color); }
+
 body {
   font-family: var(--primary-font);
   margin: 0; }
@@ -178,12 +181,17 @@ main {
       font-family: var(--primary-font);
       font-weight: 300;
       line-height: 22px;
-      text-align: right;
-      width: 75%; }
+      align-self: flex-end;
+      text-align: justify;
+      width: 75%;
+      padding-bottom: 2rem; }
       @media (max-width: 1024px) {
         .hero__container__main__header p {
           text-align: center;
           width: 100%; } }
+      @media (max-width: 575.5px) {
+        .hero__container__main__header p {
+          padding-bottom: auto; } }
   .hero__container__main__img img {
     display: block;
     max-width: 100%;
@@ -422,7 +430,8 @@ main {
         .featured__gallery__items__item__details__title {
           color: #ffffff;
           font-size: 24px;
-          line-height: 32px; }
+          line-height: 32px;
+          cursor: pointer; }
           @media (max-width: 575.5px) {
             .featured__gallery__items__item__details__title {
               width: 100%; }
@@ -463,6 +472,21 @@ main {
         background: rgba(0, 0, 0, 0.3);
         opacity: 0;
         transition: opacity 0.3s ease-in; }
+        @media (max-width: 575.5px) {
+          .featured__gallery__items__item .overlay {
+            bottom: 18%; } }
+        @media (max-width: 430px) {
+          .featured__gallery__items__item .overlay {
+            bottom: 25.4%; } }
+        @media (max-width: 414px) {
+          .featured__gallery__items__item .overlay {
+            bottom: 26.4%; } }
+        @media (max-width: 390px) {
+          .featured__gallery__items__item .overlay {
+            bottom: 27.4%; } }
+        @media (max-width: 360px) {
+          .featured__gallery__items__item .overlay {
+            bottom: 29.4%; } }
         .featured__gallery__items__item .overlay button {
           cursor: pointer;
           width: 192px;
@@ -631,6 +655,9 @@ main {
 .hero {
   background-color: var(--primary-bg-color);
   padding: 5rem; }
+  @media (max-width: 575.5px) {
+    .hero {
+      padding: 3rem 1rem 1rem; } }
   .hero h1 {
     color: #ffffff;
     font-size: 64px;
@@ -640,6 +667,11 @@ main {
     margin: 0;
     padding: 0;
     width: 65%; }
+    @media (max-width: 575.5px) {
+      .hero h1 {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 48px; } }
 
 .about__hero {
   background-color: var(--primary-bg-color);
@@ -698,6 +730,10 @@ main {
         @media (max-width: 1035px) {
           .about__hero__profile__bio p {
             padding: 1rem; } }
+        @media (max-width: 575.5px) {
+          .about__hero__profile__bio p {
+            padding: 0 1rem 1rem;
+            text-align: left; } }
     .about__hero__profile__skills {
       margin-top: 2rem; }
       @media (max-width: 1035px) {

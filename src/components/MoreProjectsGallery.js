@@ -24,7 +24,9 @@ const MoreProjectsGallery = () => {
 						<img src={i.screenshot} alt={i.projectName} />
 						<div className='featured__gallery__items__item__details'>
 							<div className='featured__gallery__items__item__details__title'>
-								<p>{i.projectName}</p>
+								<p data-projectid={i.projectId} onClick={detailsOnClick}>
+									{i.projectName}
+								</p>
 							</div>
 							<div className='featured__gallery__items__item__details__services'>
 								<span>UX Design</span>

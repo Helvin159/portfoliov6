@@ -51,6 +51,10 @@
 				@media (max-width: 1035px) {
 					padding: 1rem;
 				}
+				@media (max-width: 575.5px) {
+					padding: 0 1rem 1rem;
+					text-align: left;
+				}
 			}
 		}
 
