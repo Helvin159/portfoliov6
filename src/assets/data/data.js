@@ -209,7 +209,7 @@ export const projects = [
 		projectName: 'RollByADP',
 		workDone:
 			'In the three-team development setup, I played a key role in converting a jQuery site to ReactJS, focusing on the front end. Collaborating with teammates, we integrated ReactJS for enhanced performance. We also utilized Sitecore as the CMS for efficient content management. My responsibilities included translating design concepts into responsive and dynamic interfaces, contributing to the overall modernization of the web platform.',
-		screenshot: 'https://drive.google.com/file/d/1imfcxtX66VEdCNZE6jvDm5TCIo5djS3v/view?usp=drivesdk',
+		screenshot: 'https://drive.google.com/uc?id=1imfcxtX66VEdCNZE6jvDm5TCIo5djS3v',
 		languages: [
 			{ lang: 'JavaScript' },
 			{ lang: 'JQuery' },
