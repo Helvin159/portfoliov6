@@ -239,7 +239,7 @@ export const projects = [
 		responsibilityTwo:
 			'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
 		//  and sprint planning. This agile approach, coupled with Jira's organization, enabled us to adapt swiftly to changing requirements and deliver high-quality web applications iteratively.",
-		screenshot: 'https://drive.google.com/file/d/1ANMtj03yf9uIr-1Gukh1TgdGjTAv85sn/view',
+		screenshot: 'https://lh3.googleusercontent.com/drive-viewer/AEYmBYQMDSTtSbltBC5w2-ozSFvg8K5o1fBGb_RYS9rC6l2yP1D8CbM2oBSs9ltYy--rXHN5bkjO7Ybbkq3OEBFEiJ05BWN3Rw=s1600',
 		languages: [
 			{ lang: 'JavaScript' },
 			{ lang: 'Html5' },
