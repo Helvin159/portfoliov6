@@ -509,6 +509,55 @@ main {
           outline: 0; }
       .featured__gallery__items__item .overlay:hover {
         opacity: 1; }
+      .featured__gallery__items__item .overlay.more-projects {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s ease-in; }
+        @media (max-width: 575.5px) {
+          .featured__gallery__items__item .overlay.more-projects {
+            bottom: 5.4%; } }
+        @media (max-width: 430px) {
+          .featured__gallery__items__item .overlay.more-projects {
+            bottom: 22.4%; } }
+        @media (max-width: 414px) {
+          .featured__gallery__items__item .overlay.more-projects {
+            bottom: 23.4%; } }
+        @media (max-width: 390px) {
+          .featured__gallery__items__item .overlay.more-projects {
+            bottom: 24.4%; } }
+        @media (max-width: 360px) {
+          .featured__gallery__items__item .overlay.more-projects {
+            bottom: 26%; } }
+        .featured__gallery__items__item .overlay.more-projects button {
+          cursor: pointer;
+          width: 192px;
+          height: 46px;
+          padding: 0px 8px;
+          border: 0;
+          box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+          background-color: #000000;
+          color: #ffffff;
+          font-size: 20px;
+          font-family: var(--primary-font);
+          line-height: 26px;
+          text-transform: uppercase;
+          outline: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none; }
+        .featured__gallery__items__item .overlay.more-projects button:active {
+          outline: 0; }
+      .featured__gallery__items__item .overlay.more-projects:hover {
+        opacity: 1; }
     .featured__gallery__items__item.item {
       margin-top: 4.41rem; }
   .featured__gallery__items.more-projects {

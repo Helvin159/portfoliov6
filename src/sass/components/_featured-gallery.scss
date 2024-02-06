@@ -160,6 +160,45 @@
 			& .overlay:hover {
 				opacity: 1;
 			}
+			& .overlay.more-projects {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(0, 0, 0, 0.3);
+				opacity: 0;
+				transition: opacity 0.3s ease-in;
+
+				@media (max-width: 575.5px) {
+					bottom: 5.4%;
+				}
+
+				@media (max-width: 430px) {
+					bottom: 22.4%;
+				}
+				@media (max-width: 414px) {
+					bottom: 23.4%;
+				}
+				@media (max-width: 390px) {
+					bottom: 24.4%;
+				}
+				@media (max-width: 360px) {
+					bottom: 26%;
+				}
+
+				& button {
+					@include overlay-btn;
+				}
+
+				& button:active {
+					outline: 0;
+				}
+			}
+
+			& .overlay.more-projects:hover {
+				opacity: 1;
+			}
 		}
 
 		&__item.item {

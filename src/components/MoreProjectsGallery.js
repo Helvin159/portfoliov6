@@ -34,7 +34,7 @@ const MoreProjectsGallery = () => {
 								<span>UI Development</span>
 							</div>
 						</div>
-						<div className='overlay'>
+						<div className='overlay more-projects'>
 							<button data-projectid={i.projectId} onClick={detailsOnClick}>
 								see details
 							</button>
