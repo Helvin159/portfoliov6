@@ -209,13 +209,16 @@ export const projects = [
 		projectName: 'RollByADP',
 		workDone:
 			'In the three-team development setup, I played a key role in converting a jQuery site to ReactJS, focusing on the front end. Collaborating with teammates, we integrated ReactJS for enhanced performance. We also utilized Sitecore as the CMS for efficient content management. My responsibilities included translating design concepts into responsive and dynamic interfaces, contributing to the overall modernization of the web platform.',
-		responsibilityOneTitle: 'JQuery to ReactJs',
-		responsibilityOne:
-			"As a front-end developer, I led the migration from jQuery to ReactJS for our web app, integrating Sitecore's React SDK and optimizing component performance. Collaborating with back-end developers, I ensured,seamless",
-
-		responsibilityTwoTitle: 'Agile Work Environment',
-		responsibilityTwo:
-			'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
+		responsibilities: {
+			respOne: {
+				title: 'JQuery to ReactJs',
+				copy: "As a front-end developer, I led the migration from jQuery to ReactJS for our web app, integrating Sitecore's React SDK and optimizing component performance. Collaborating with back-end developers, I ensured,seamless",
+			},
+			respTwo: {
+				title: 'Agile Work Environment',
+				copy: 'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
+			},
+		},
 		screenshots: {
 			landscape: {
 				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADP%2Flandscape%2FIMG_0077.jpg?alt=media&token=228981f3-0864-4ec6-8897-d62fc45f0f8e',
@@ -252,16 +255,18 @@ export const projects = [
 		workDone:
 			'I assumed the role of the lead front-end developer for this project, where our primary objective was the implementation of Sitecore JSS for the site. I meticulously ensured pixel-perfect CSS implementation, meticulously aligning with the provided designs while ',
 		// also ensuring optimal responsiveness.',
-		responsibilityOneTitle: 'JQuery to ReactJs',
-		responsibilityOne:
-			"As a front-end developer, I led the migration from jQuery to ReactJS for our web app, integrating Sitecore's React SDK and optimizing component performance. Collaborating with back-end developers, I ensured,seamless",
-		//  integration with Sitecore CMS, contributing to a more modern and efficient application.",
-
-		responsibilityTwoTitle: 'Agile Work Environment',
-		responsibilityTwo:
-			'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
-		//  and sprint planning. This agile approach, coupled with Jira's organization, enabled us to adapt swiftly to changing requirements and deliver high-quality web applications iteratively.",
-
+		responsibilities: {
+			respOne: {
+				title: 'JQuery to ReactJs',
+				copy: "As a front-end developer, I led the migration from jQuery to ReactJS for our web app, integrating Sitecore's React SDK and optimizing component performance. Collaborating with back-end developers, I ensured,seamless",
+				//  integration with Sitecore CMS, contributing to a more modern and efficient application.",
+			},
+			respTwo: {
+				title: 'Agile Work Environment',
+				copy: 'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
+				//  and sprint planning. This agile approach, coupled with Jira's organization, enabled us to adapt swiftly to changing requirements and deliver high-quality web applications iteratively.",
+			},
+		},
 		screenshots: {
 			landscape: {
 				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FRollByADPBlog%2Flandscape%2FIMG_0069.jpg?alt=media&token=d4338e49-c8a6-4ced-b80f-8888dbbae166',
@@ -297,6 +302,16 @@ export const projects = [
 		projectName: 'ADP.com (Content)',
 		workDone:
 			'I worked on content entry for this site on an international scale with Sitecore. We managed Chinese, Italian, German, and Swiss among other languages.',
+		responsibilities: {
+			respOne: {
+				title: null,
+				copy: null,
+			},
+			respTwo: {
+				title: null,
+				copy: null,
+			},
+		},
 		screenshots: {
 			landscape: {
 				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FADP%2Flandscape%2Fs1.png?alt=media&token=79500b4a-7fdc-487a-a252-a3bbb34b8304',
@@ -323,6 +338,16 @@ export const projects = [
 		projectName: 'Criterion Ticketing',
 		workDone:
 			'I worked as part of a team on this project. My responsibilities included building components assigned to me, testing component for the component, and the functionality of the component. We worked with Vue3 as a framework.',
+		responsibilities: {
+			respOne: {
+				title: null,
+				copy: null,
+			},
+			respTwo: {
+				title: null,
+				copy: null,
+			},
+		},
 		screenshots: {
 			landscape: {
 				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FCriterionTicketing%2Flandscape%2Fproject_four.png?alt=media&token=368edb53-e88c-48fb-bc11-865ac3865a1b',
@@ -345,6 +370,16 @@ export const projects = [
 		projectName: 'Highland Home Loans',
 		workDone:
 			'For this project, I was tasked with building the entire front end and functionality. I was given designs to follow and build in separate components. The project was transfered to Crownpeak CMS and templated.',
+		responsibilities: {
+			respOne: {
+				title: null,
+				copy: null,
+			},
+			respTwo: {
+				title: null,
+				copy: null,
+			},
+		},
 		screenshots: {
 			landscape: {
 				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FHighlandHomeLoans%2Flandscape%2Fproject_three.png?alt=media&token=0362dc7b-bdbe-4965-a052-eae36ccae553',

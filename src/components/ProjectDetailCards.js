@@ -8,36 +8,36 @@ import imgFive from '../assets/png/project-det-five.png';
 
 const ProjectDetailCards = ({
 	name,
-	respOne,
-	respOneTitle,
-	respTwo,
-	respTwoTitle,
-	landscapeS1,
+	responsibilities,
 	landscapeS2,
+	landscapeS3,
 	portraitS1,
 	portraitS2,
 	portraitS3,
 }) => {
 	const comingSoon = 'coming soon...';
+
+	const { respOne, respTwo } = responsibilities;
+
 	return (
 		<div className='project__cards'>
 			<div className='project__cards__container'>
 				<div className='project__cards__container__card'>
 					<div className='project__cards__container__card__img'>
-						<img src={landscapeS1 ? landscapeS1 : imgFour} alt={name} />
+						<img src={landscapeS2 ? landscapeS2 : imgFour} alt={name} />
 					</div>
 					<div className='project__cards__container__card__summary'>
-						<h3>{`About ${respOneTitle}`}</h3>
-						<p>{respOne ? respOne : comingSoon}</p>
+						<h3>{`About ${respOne.title ? respOne.title : comingSoon}`}</h3>
+						<p>{respOne.copy ? respOne.copy : comingSoon}</p>
 					</div>
 				</div>
 				<div className='project__cards__container__card'>
 					<div className='project__cards__container__card__img'>
-						<img src={landscapeS2 ? landscapeS2 : imgFive} alt={name} />
+						<img src={landscapeS3 ? landscapeS3 : imgFive} alt={name} />
 					</div>
 					<div className='project__cards__container__card__summary'>
-						<h3>{`About ${respTwoTitle}`}</h3>
-						<p>{respTwo ? respTwo : comingSoon}</p>
+						<h3>{`About ${respTwo.title ? respTwo.title : comingSoon}`}</h3>
+						<p>{respTwo.copy ? respTwo.copy : comingSoon}</p>
 					</div>
 				</div>
 			</div>

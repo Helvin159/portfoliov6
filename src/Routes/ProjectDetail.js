@@ -19,6 +19,7 @@ const ProjectDetail = () => {
 						projectName,
 						workDone,
 						languages,
+						responsibilities,
 						responsibilityOne,
 						responsibilityTwo,
 						responsibilityOneTitle,
@@ -36,12 +37,13 @@ const ProjectDetail = () => {
 							/>
 							<ProjectDetailCards
 								name={projectName}
+								responsibilities={responsibilities}
 								respOne={responsibilityOne}
 								respTwo={responsibilityTwo}
 								respOneTitle={responsibilityOneTitle}
 								respTwoTitle={responsibilityTwoTitle}
-								landscapeS1={screenshots.landscape.s1}
 								landscapeS2={screenshots.landscape.s2}
+								landscapeS3={screenshots.landscape.s3}
 								portraitS1={screenshots.portrait.s1}
 								portraitS2={screenshots.portrait.s2}
 								portraitS3={screenshots.portrait.s3}
