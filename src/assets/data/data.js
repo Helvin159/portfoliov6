@@ -209,7 +209,20 @@ export const projects = [
 		projectName: 'RollByADP',
 		workDone:
 			'In the three-team development setup, I played a key role in converting a jQuery site to ReactJS, focusing on the front end. Collaborating with teammates, we integrated ReactJS for enhanced performance. We also utilized Sitecore as the CMS for efficient content management. My responsibilities included translating design concepts into responsive and dynamic interfaces, contributing to the overall modernization of the web platform.',
-		screenshot: 'https://lh3.googleusercontent.com/drive-viewer/AEYmBYTDS8M3bjVELR9kvzGHAZyNi1tH3h-CCDngcJ6OM1J0ePzmEawuPjqS4FC4Wzw6XuAQFfMZ9qFp0ycbaA5LA7IuQnZq=s1600',
+		screenshot:
+			'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0077.jpg',
+		screenshots: {
+			landscape: {
+				s1: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0077.jpg',
+				s2: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0078.jpg',
+				s3: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0079.jpg',
+			},
+			portrait: {
+				s1: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0074.jpg',
+				s2: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0075.jpg',
+				s3: 'https://screenandvids.mrrymer.com/assets/RollByADP/IMG_0076.jpg',
+			},
+		},
 		languages: [
 			{ lang: 'JavaScript' },
 			{ lang: 'JQuery' },
@@ -239,7 +252,20 @@ export const projects = [
 		responsibilityTwo:
 			'In my previous front-end developer role, I thrived in an agile environment using Jira for project management. Collaborating closely with designers and developers, we streamlined communication through daily stand-ups',
 		//  and sprint planning. This agile approach, coupled with Jira's organization, enabled us to adapt swiftly to changing requirements and deliver high-quality web applications iteratively.",
-		screenshot: 'https://lh3.googleusercontent.com/drive-viewer/AEYmBYQMDSTtSbltBC5w2-ozSFvg8K5o1fBGb_RYS9rC6l2yP1D8CbM2oBSs9ltYy--rXHN5bkjO7Ybbkq3OEBFEiJ05BWN3Rw=s1600',
+		screenshot:
+			'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0069.jpg',
+		screenshots: {
+			landscape: {
+				s1: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0069.jpg',
+				s2: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0070.jpg',
+				s3: null,
+			},
+			portrait: {
+				s1: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0071.jpg',
+				s2: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0072.jpg',
+				s3: 'https://screenandvids.mrrymer.com/assets/BlogRollByADP/IMG_0073.jpg',
+			},
+		},
 		languages: [
 			{ lang: 'JavaScript' },
 			{ lang: 'Html5' },
@@ -259,7 +285,19 @@ export const projects = [
 		projectName: 'ADP.com (Content)',
 		workDone:
 			'I worked on content entry for this site on an international scale with Sitecore. We managed Chinese, Italian, German, and Swiss among other languages.',
-		screenshot: 'https://mrrymer.com/assets/projects/project_five.png',
+		screenshot: 'https://screenandvids.mrrymer.com/assets/adp/s2.png',
+		screenshots: {
+			landscape: {
+				s1: 'https://screenandvids.mrrymer.com/assets/adp/s1.png',
+				s2: 'https://screenandvids.mrrymer.com/assets/adp/s2.png',
+				s3: 'https://screenandvids.mrrymer.com/assets/adp/s3.png',
+			},
+			portrait: {
+				s1: 'https://screenandvids.mrrymer.com/assets/adp/s4.png',
+				s2: 'https://screenandvids.mrrymer.com/assets/adp/s5.png',
+				s3: 'https://screenandvids.mrrymer.com/assets/adp/s6.png',
+			},
+		},
 		languages: [{ lang: 'Html5' }, { lang: 'CSS' }, { lang: 'JavaScript' }],
 		frameworks: [],
 		cms: ['Sitecore'],
@@ -270,7 +308,16 @@ export const projects = [
 		projectName: 'Criterion Ticketing',
 		workDone:
 			'I worked as part of a team on this project. My responsibilities included building components assigned to me, testing component for the component, and the functionality of the component. We worked with Vue3 as a framework.',
-		screenshot: 'https://drive.google.com/uc?export=view&id=1BpuBQNCXvuVsimsfH7Z5aMFejuroah7i',
+		screenshot:
+			'https://screenandvids.mrrymer.com/assets/CriterionTicketing/project_four.png',
+		screenshots: {
+			landscape: {
+				s1: 'https://screenandvids.mrrymer.com/assets/CriterionTicketing/project_four.png',
+				s2: null,
+				s3: null,
+			},
+			portrait: { s1: null, s2: null, s3: null },
+		},
 		languages: [{ lang: 'JavaScript' }, { lang: 'CSS' }, { lang: 'Html5' }],
 		frameworks: [{ framework: 'Vue3' }, { framework: 'Tailwind' }],
 		cms: [],
@@ -281,7 +328,16 @@ export const projects = [
 		projectName: 'Highland Home Loans',
 		workDone:
 			'For this project, I was tasked with building the entire front end and functionality. I was given designs to follow and build in separate components. The project was transfered to Crownpeak CMS and templated.',
-		screenshot: 'https://lh3.googleusercontent.com/drive-viewer/AEYmBYSrL_N53BCUWtyunqk3cNOf0UGJmiJUMFFL-hQuSn9DHr7JYA5iN8r6O9WM-06hZGRJMA8FnAfQ9sftp89WXcLbLhXVgQ=s1600',
+		screenshot:
+			'https://screenandvids.mrrymer.com/assets/HighlandHomeLoans/project_three.png',
+		screenshots: {
+			landscape: {
+				s1: 'https://screenandvids.mrrymer.com/assets/HighlandHomeLoans/project_three.png',
+				s2: null,
+				s3: null,
+			},
+			portrait: { s1: null, s2: null, s3: null },
+		},
 		languages: [{ lang: 'JavaScript' }, { lang: 'Html5' }, { lang: 'CSS' }],
 		cms: ['Crownpeak'],
 		url: 'https://www.highlandhomeloans.com/',

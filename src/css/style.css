@@ -186,7 +186,8 @@ main {
           width: 100%; } }
   .hero__container__main__img img {
     display: block;
-    max-width: 100%; }
+    max-width: 100%;
+    margin: 0 auto; }
   .hero__container__main__stats {
     display: flex;
     flex-direction: row;
