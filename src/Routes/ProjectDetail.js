@@ -17,19 +17,19 @@ const ProjectDetail = () => {
 				if (params.projectId === projectId) {
 					const {
 						projectName,
-						screenshot,
 						workDone,
 						languages,
 						responsibilityOne,
 						responsibilityTwo,
 						responsibilityOneTitle,
 						responsibilityTwoTitle,
+						screenshots,
 					} = i;
 					return (
 						<Fragment key={k}>
 							<ProjectHero
 								name={projectName}
-								img={screenshot}
+								img={screenshots.landscape.s1}
 								about={workDone}
 								langs={languages}
 							/>
@@ -39,8 +39,13 @@ const ProjectDetail = () => {
 								respTwo={responsibilityTwo}
 								respOneTitle={responsibilityOneTitle}
 								respTwoTitle={responsibilityTwoTitle}
+								landscapeS1={screenshots.landscape.s1}
+								landscapeS2={screenshots.landscape.s2}
+								portraitS1={screenshots.portrait.s1}
+								portraitS2={screenshots.portrait.s2}
+								portraitS3={screenshots.portrait.s3}
 							/>
-							<ProjectDetailVideo videoPoster={screenshot} />
+							<ProjectDetailVideo videoPoster={screenshots.landscape.s1} />
 						</Fragment>
 					);
 				} else {

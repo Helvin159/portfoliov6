@@ -474,19 +474,16 @@ main {
         transition: opacity 0.3s ease-in; }
         @media (max-width: 575.5px) {
           .featured__gallery__items__item .overlay {
-            bottom: 18%; } }
+            bottom: 5.4%; } }
         @media (max-width: 430px) {
           .featured__gallery__items__item .overlay {
-            bottom: 25.4%; } }
-        @media (max-width: 414px) {
-          .featured__gallery__items__item .overlay {
-            bottom: 26.4%; } }
+            bottom: 7.4%; } }
         @media (max-width: 390px) {
           .featured__gallery__items__item .overlay {
-            bottom: 27.4%; } }
+            bottom: 8.4%; } }
         @media (max-width: 360px) {
           .featured__gallery__items__item .overlay {
-            bottom: 29.4%; } }
+            bottom: 8%; } }
         .featured__gallery__items__item .overlay button {
           cursor: pointer;
           width: 192px;

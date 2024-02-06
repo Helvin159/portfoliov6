@@ -12,13 +12,18 @@ const ProjectDetailCards = ({
 	respOneTitle,
 	respTwo,
 	respTwoTitle,
+	landscapeS1,
+	landscapeS2,
+	portraitS1,
+	portraitS2,
+	portraitS3,
 }) => {
 	return (
 		<div className='project__cards'>
 			<div className='project__cards__container'>
 				<div className='project__cards__container__card'>
 					<div className='project__cards__container__card__img'>
-						<img src={imgFour} alt={name} />
+						<img src={landscapeS1 ? landscapeS1 : imgFour} alt={name} />
 					</div>
 					<div className='project__cards__container__card__summary'>
 						<h3>{`About ${respOneTitle}`}</h3>
@@ -27,7 +32,7 @@ const ProjectDetailCards = ({
 				</div>
 				<div className='project__cards__container__card'>
 					<div className='project__cards__container__card__img'>
-						<img src={imgFive} alt={name} />
+						<img src={landscapeS2 ? landscapeS2 : imgFive} alt={name} />
 					</div>
 					<div className='project__cards__container__card__summary'>
 						<h3>{`About ${respTwoTitle}`}</h3>
@@ -37,13 +42,13 @@ const ProjectDetailCards = ({
 			</div>
 			<div className='project__cards__gallery'>
 				<div className='project__cards__gallery__card'>
-					<img src={imgOne} alt={name} />
+					<img src={portraitS1 ? portraitS1 : imgOne} alt={name} />
 				</div>
 				<div className='project__cards__gallery__card'>
-					<img src={imgTwo} alt={name} />
+					<img src={portraitS2 ? portraitS2 : imgTwo} alt={name} />
 				</div>
 				<div className='project__cards__gallery__card'>
-					<img src={imgThree} alt={name} />
+					<img src={portraitS3 ? portraitS3 : imgThree} alt={name} />
 				</div>
 			</div>
 		</div>
