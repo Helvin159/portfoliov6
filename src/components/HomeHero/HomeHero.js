@@ -6,7 +6,7 @@ import minimap from '../../assets/svg/icon-map.svg';
 
 const HomeHero = () => {
 	const heroImg =
-		'https://screenandvids.mrrymer.com/assets/Cool%20Shots/IMG_0817.JPG';
+		'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2Fimgs%2FIMG_20160902_144507.JPG?alt=media&token=1c6a76ab-0bf2-482c-8a4b-70711504f6cb';
 	return (
 		<div className='hero__container'>
 			<div className='hero__container__location'>

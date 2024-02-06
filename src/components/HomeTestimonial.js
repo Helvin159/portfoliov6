@@ -3,7 +3,7 @@ import React from 'react';
 
 const HomeTestimonial = () => {
 	const avatarImg =
-		'https://screenandvids.mrrymer.com/assets/Headshot/IMG_6403.JPG';
+		'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2Fimgs%2FIMG_6403.JPG?alt=media&token=0d1b12be-8af9-4f40-bf6e-ccd51bcb9e18';
 	return (
 		<div className='home__testimonial'>
 			<div className='home__testimonial__card'>
