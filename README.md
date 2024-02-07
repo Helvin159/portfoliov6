@@ -7,6 +7,8 @@ Welcome to my portfolio! This project serves as a showcase of my work, personal 
 - React
 - Node Sass
 - (Potential) Bootstrap or Tailwind CSS
+- Google Firebase (NoSQL database)
+- Google Cloud Services (Content hosting)
 
 ## Features (Planned)
 
@@ -17,6 +19,6 @@ Welcome to my portfolio! This project serves as a showcase of my work, personal 
 
 ## How to Contribute
 
-Feel free to contribute to the project by providing feedback, or suggestions. Your input is highly valued!
+Feel free to contribute to the project by providing feedback or suggestions. Your input is highly valued!
 
 Stay tuned & Happy coding! 🚀
