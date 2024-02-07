@@ -340,11 +340,11 @@ export const projects = [
 			'I worked as part of a team on this project. My responsibilities included building components assigned to me, testing component for the component, and the functionality of the component. We worked with Vue3 as a framework.',
 		responsibilities: {
 			respOne: {
-				title: null,
+				title: 'Build Components',
 				copy: null,
 			},
 			respTwo: {
-				title: null,
+				title: 'New Framework R&D',
 				copy: null,
 			},
 		},
