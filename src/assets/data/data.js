@@ -326,7 +326,7 @@ export const projects = [
 		},
 		videos: {
 			video_one:
-				'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Videos%2FRollByADP%2Frollbyadp.mov?alt=media&token=632c5159-1c6e-4714-a2f8-a5964befbe40',
+				'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Videos%2FADP%2Fadpcontententry.mov?alt=media&token=dab835c7-21dc-4789-b3f1-47e2cfb57cf0',
 		},
 		languages: [{ lang: 'Html5' }, { lang: 'CSS' }, { lang: 'JavaScript' }],
 		frameworks: [],
@@ -376,25 +376,29 @@ export const projects = [
 			'For this project, I was tasked with building the entire front end and functionality. I was given designs to follow and build in separate components. The project was transfered to Crownpeak CMS and templated.',
 		responsibilities: {
 			respOne: {
-				title: null,
+				title: 'Build Pages & CSS',
 				copy: null,
 			},
 			respTwo: {
-				title: null,
+				title: 'Crownpeak CMS Setup',
 				copy: null,
 			},
 		},
 		screenshots: {
 			landscape: {
 				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FHighlandHomeLoans%2Flandscape%2Fproject_three.png?alt=media&token=0362dc7b-bdbe-4965-a052-eae36ccae553',
-				s2: null,
-				s3: null,
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FHighlandHomeLoans%2Flandscape%2FhhlL3.png?alt=media&token=37ce81d7-ccf1-42e8-bddd-e789ebd9c622',
+				s3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FHighlandHomeLoans%2Flandscape%2FhhlL2.png?alt=media&token=888fab64-9f01-4c25-84d1-ffa6168293f6',
 			},
-			portrait: { s1: null, s2: null, s3: null },
+			portrait: {
+				s1: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FHighlandHomeLoans%2Fportrait%2FhhlP1.png?alt=media&token=7816233c-f6e6-4487-a644-49d596cc154f',
+				s2: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FHighlandHomeLoans%2Fportrait%2FhhlP2.png?alt=media&token=de9e904a-b713-4b6c-b88d-dfb0673a982f',
+				s3: 'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Screenshots%2FHighlandHomeLoans%2Fportrait%2FhhlP3.png?alt=media&token=a9279f04-a2e6-42a9-b43d-ad214e69dc60',
+			},
 		},
 		videos: {
 			video_one:
-				'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Videos%2FRollByADP%2Frollbyadp.mov?alt=media&token=632c5159-1c6e-4714-a2f8-a5964befbe40',
+				'https://firebasestorage.googleapis.com/v0/b/portfolio-db-b6a63.appspot.com/o/Videos%2FHighlandHomeLoans%2Fhighlandhomeloans.mov?alt=media&token=710dde36-d420-48be-89ed-ce18701711e8',
 		},
 		languages: [{ lang: 'JavaScript' }, { lang: 'Html5' }, { lang: 'CSS' }],
 		cms: ['Crownpeak'],
