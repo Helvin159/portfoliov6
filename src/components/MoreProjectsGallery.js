@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router';
 
-import { projects } from '../assets/data/data';
+import { ProjectsContext } from '../contexts/ProjectsContext';
 
 const MoreProjectsGallery = () => {
 	const navigate = useNavigate();
@@ -10,13 +10,15 @@ const MoreProjectsGallery = () => {
 		navigate(`/featured/${e.target.dataset.projectid}`);
 	};
 
+	const { projects } = useContext(ProjectsContext);
+
 	return (
 		<div className='featured__gallery '>
 			<div className='featured__gallery__border'>
 				<div className='border' />
 			</div>
 			<div className='featured__gallery__items more-projects'>
-				{projects.map((i, k) => (
+				{projects?.map((i, k) => (
 					<div className='featured__gallery__items__item item' key={k}>
 						<img src={i.screenshots.landscape.s1} alt={i.projectName} />
 						<div className='featured__gallery__items__item__details'>

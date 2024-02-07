@@ -1,17 +1,21 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { useParams } from 'react-router';
 
-import { projects } from '../assets/data/data';
 import ProjectHero from '../components/ProjectHero';
 import ProjectDetailCards from '../components/ProjectDetailCards';
 import ProjectDetailVideo from '../components/ProjectDetailVideo';
 
+import { ProjectsContext } from '../contexts/ProjectsContext';
+
 const ProjectDetail = () => {
 	let params = useParams();
 
+	const { projects } = useContext(ProjectsContext);
+	console.log(projects);
+
 	return (
 		<div>
-			{projects.map((i, k) => {
+			{projects?.map((i, k) => {
 				const { projectId } = i;
 
 				if (params.projectId === projectId) {
