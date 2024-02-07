@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ lastName }) => {
 	const navigate = useNavigate();
 	const handleOnClick = () => navigate('/contact');
 
@@ -9,7 +9,7 @@ const Header = () => {
 		<div className='header'>
 			<div className='header__container'>
 				<div className='header__container__title'>
-					<Link to={'/'}>Mr. Rymer</Link>
+					<Link to={'/'}> {lastName ? `Mr. ${lastName}` : 'Loading...'}</Link>
 				</div>
 			</div>
 			<div className='header__container'>

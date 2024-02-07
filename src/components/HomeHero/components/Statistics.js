@@ -1,29 +1,34 @@
 import React from 'react';
 
-const Statistics = () => {
+const Statistics = ({
+	projectsCompleted,
+	experienceYrs,
+	awardCount,
+	clientCount,
+}) => {
 	return (
 		<div className='hero__container__main__stats'>
 			<div className='stat'>
 				<div className='stat__copy'>
-					<h3>5+</h3>
+					<h3>{projectsCompleted}+</h3>
 					<p>Projects completed</p>
 				</div>
 			</div>
 			<div className='stat'>
 				<div className='stat__copy'>
-					<h3>2+</h3>
+					<h3>{experienceYrs}+</h3>
 					<p>Years of experience</p>
 				</div>
 			</div>
 			<div className='stat'>
 				<div className='stat__copy'>
-					<h3>12</h3>
-					<p>Design Accolades</p>
+					<h3>{awardCount}</h3>
+					<p>Professional Awards</p>
 				</div>
 			</div>
 			<div className='stat'>
 				<div className='stat__copy'>
-					<h3>69</h3>
+					<h3>{clientCount}</h3>
 					<p>Satisfied Clients</p>
 				</div>
 			</div>

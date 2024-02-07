@@ -7,141 +7,19 @@ export const genInfo = [
 		last_name: 'Rymer',
 		prefix: 'Mr.',
 		email_addy: 'helvin159@gmail.com',
-		position: 'Front End Developer',
+		position: 'Front-End Developer',
 		specialty: 'ReactJS',
-		short_about_me:
-			"I am a web developer with over 3 years of experience developing high quality user interfaces. I've worked on testing, debuggin and researching new and current technologies and trends. I have a proven ability to build dynamic themes, write re-usable code and pay great attention to detail.",
-		short_description:
-			'I AM A WEB DEVELOPER WITH OVER 3 YEARS OF EXPERIENCE DEVELOPING HIGH QUALITY USER INTERFACES, TESTING, DEBUGGING AND RESEARCHING NEW & CURRENT TECHNOLOGIES, AND TRENDS. I HAVE A PROVEN ABILITY TO BUILD DYNAMIC THEMES, WRITE RE-USABLE CODE AND GREAT ATTENTION TO DETAIL WITH PIXEL PERFECT PROJECTS.',
-		what_im_looking_for:
-			"I am a web developer with over 3 years of experience developing high quality user interfaces. I've worked on testing, debuggin and researching new and current technologies and trends. I have a proven ability to build dynamic themes, write re-usable code and pay great attention to detail.",
-		lang: [
-			{ lng: 'HTML', length_of_experience: '', expertise_level: '' },
-			{ lng: 'CSS', length_of_experience: '', expertise_level: '' },
-			{ lng: 'Sass', length_of_experience: '', expertise_level: '' },
-			{ lng: 'Javascript', length_of_experience: '', expertise_level: '' },
-			{ lng: 'ReactJs', length_of_experience: '', expertise_level: '' },
-			{ lng: 'VueJs', length_of_experience: '', expertise_level: '' },
-			{ lng: 'NodeJs', length_of_experience: '', expertise_level: '' },
-			{ lng: 'Redux', length_of_experience: '', expertise_level: '' },
-			{ lng: 'Php', length_of_experience: '', expertise_level: '' },
-		],
-		tools: [
-			'VSCode',
-			'Github',
-			'Bitbucket',
-			'Photoshop',
-			'Jira',
-			'Slack',
-			'DevOps',
-		],
-		cms: ['Sitecore', 'Wordpress', 'BigCommerce'],
-		social_media: [
-			{
-				platform: 'LinkedIn',
-				user_name: 'helvinrymer',
-				acct_url: 'https://www.linkedin.com/in/helvinrymer',
-			},
-			{
-				platform: 'Github',
-				user_name: 'Helvin159',
-				acct_url: 'https://github.com/Helvin159',
-			},
-			{
-				platform: 'Instagram',
-				user_name: '_mrrymer',
-				acct_url: 'https://www.instagram.com/_mrrymer/',
-			},
-		],
-		employers: [
-			{
-				company: 'MrRymer.com - Freelance',
-				position: 'Full Stack Development',
-				summary:
-					'Web development. Working with multiple languages, frameworks, etc… I write HTML, JS, CSS3, Php, Sass, and some MySQL. Working with ReactJs, VueJs and Wordpress.',
-				date_stared: 'February, 2020',
-				date_ended: 'N/A',
-				total_time: '1 Year, 8 Months',
-			},
-			{
-				company: 'iMedia Inc',
-				position: 'Front End Developer',
-				summary:
-					'Front End React Developer At iMedia Inc I primarily worked on https://RollByADP.com and https://blog.RollByADP.com building dynamic React front end components with Sitecore JSS.<br /> <span>On a separate project we worked on https://criterionticketing.com just when Vue3 released. My work on this project includes building front end components and functionality. We worked with Tailwind for styling.</span><br /> I also did content management for ADP.com international with Sitecore.',
-				date_stared: 'November, 2021',
-				date_ended: 'November, 2022',
-				total_time: '1 Year',
-			},
-
-			{
-				company: 'Trailways.com',
-				position: 'Front End Developer',
-				summary:
-					'Assist in development of Wordpress plugins, react components, internationalization of new trailways.ca expansion, accessibility enhancements and Google maps api.',
-				date_stared: 'September, 2021',
-				date_ended: 'November, 2021',
-				total_time: '3 Months',
-			},
-		],
-
-		education: [
-			{
-				school: 'NYC College of Technology',
-				school_location: 'Brooklyn, NY',
-				field_of_study: 'Full Stack Web Development',
-				grad_date: 'February, 2020',
-			},
-			{
-				school: 'NYC College of Technology',
-				school_location: 'Brooklyn, NY',
-				field_of_study: 'Computer Information Systems',
-				grad_date: '30 Credits',
-			},
-			{
-				school: 'The High School for Excellence',
-				school_location: 'Bronx, NY',
-				field_of_study: 'High School Diploma',
-				grad_date: 'June, 2007',
-			},
-		],
-		cont_education: [
-			{
-				school: 'BigCommerce Partners',
-				school_location: 'partners.BigCommerce.com',
-				field_of_study: 'CrownPeak Certification',
-				grad_date: 'In Progress',
-			},
-			{
-				school: 'Crownpeak',
-				school_location: 'Crownpeak Online',
-				field_of_study: 'CrownPeak Certification',
-				grad_date: 'April, 2022',
-			},
-
-			{
-				school: 'Udemy',
-				school_location: 'Udemy',
-				field_of_study: 'MERN - Ecommerce from Scratch',
-				grad_date: 'August, 2021',
-			},
-			{
-				school: 'Brad Traversy',
-				school_location: 'Udemy',
-				field_of_study: 'React Front to Back',
-				grad_date: 'July, 2021',
-			},
-			{
-				school: 'Zero to Mastery Academy',
-				school_location: 'Udemy',
-				field_of_study: 'Complete React Developer W/ (REDUX, Hooks, GraphQL)',
-				grad_date: 'January, 2021',
-			},
-			{
-				school: 'Udemy',
-				school_location: 'Udemy',
-				field_of_study: 'Advanced CSS and SASS',
-				grad_date: '',
-			},
+		projects_completed: '5',
+		experience_years: '3',
+		languages: [
+			{ lng: 'HTML', length_of_experience: '4' },
+			{ lng: 'CSS', length_of_experience: '4' },
+			{ lng: 'Sass', length_of_experience: '3' },
+			{ lng: 'Javascript', length_of_experience: '4' },
+			{ lng: 'ReactJs', length_of_experience: '3' },
+			{ lng: 'VueJs', length_of_experience: '1' },
+			{ lng: 'NodeJs', length_of_experience: '3' },
+			{ lng: 'Php', length_of_experience: '3' },
 		],
 		skills: [
 			'Php',
@@ -161,14 +39,108 @@ export const genInfo = [
 			'Wordpress',
 			'Photoshop',
 		],
-		awards: [
+		keySkills: ['Javascript', 'ReactJs', 'CSS', 'SCSS'],
+		tools: [
+			'VSCode',
+			'Github',
+			'Bitbucket',
+			'Photoshop',
+			'Jira',
+			'Slack',
+			'DevOps',
+			'Trello',
+		],
+		cms: ['Sitecore', 'Wordpress'],
+		social_media: [
 			{
-				award: 'Leadership Award',
-				presenter: 'Keller Williams NYC',
-				summary:
-					"I earned this award by eagerly helping my team and others within the company to be better. I very much believe in constructive criticism, whether I'm the person being criticized, or I'm the one criticizing.",
+				platform: 'LinkedIn',
+				user_name: 'helvinrymer',
+				acct_url: 'https://www.linkedin.com/in/helvinrymer',
+			},
+			{
+				platform: 'Github',
+				user_name: 'Helvin159',
+				acct_url: 'https://github.com/Helvin159',
+			},
+			{
+				platform: 'Instagram',
+				user_name: '_mrrymer',
+				acct_url: 'https://www.instagram.com/_mrrymer/',
 			},
 		],
+		headline_one:
+			'I AM A HIP-HOP LOVING FRONT-END DEVELOPER WITH 2+ YEARS OF EXPERIENCE.',
+		short_about_me:
+			"I am a web developer with over 3 years of experience developing high quality user interfaces. I've worked on testing, debuggin and researching new and current technologies and trends. I have a proven ability to build dynamic themes, write re-usable code and pay great attention to detail.",
+		short_about_me_two:
+			'I have always been fascinated by hip-hop culture and its influence on art and design. For this website, I combine my love for hip-hop with my coding skills to create visually stunning and engaging portfolio that resonate with the vibrant energy and creativity inherent in hip-hop culture.',
+		short_description:
+			'I AM A WEB DEVELOPER WITH OVER 3 YEARS OF EXPERIENCE DEVELOPING HIGH QUALITY USER INTERFACES, TESTING, DEBUGGING AND RESEARCHING NEW & CURRENT TECHNOLOGIES, AND TRENDS. I HAVE A PROVEN ABILITY TO BUILD DYNAMIC THEMES, WRITE RE-USABLE CODE AND GREAT ATTENTION TO DETAIL WITH PIXEL PERFECT PROJECTS.',
+		short_description_two:
+			'Welcome to my hip-hop-inspired portfolio. I enjoy front-end projects and collaborating on art and design. As a developer, I merge my passion for hip-hop with coding to craft visually striking experiences.',
+		what_im_looking_for:
+			"I am a web developer with over 3 years of experience developing high quality user interfaces. I've worked on testing, debuggin and researching new and current technologies and trends. I have a proven ability to build dynamic themes, write re-usable code and pay great attention to detail.",
+	},
+];
+
+export const education = [
+	{
+		school: 'NYC College of Technology',
+		school_location: 'Brooklyn, NY',
+		field_of_study: 'Full Stack Web Development',
+		grad_date: 'February, 2020',
+	},
+	{
+		school: 'NYC College of Technology',
+		school_location: 'Brooklyn, NY',
+		field_of_study: 'Computer Information Systems',
+		grad_date: '30 Credits',
+	},
+	{
+		school: 'The High School for Excellence',
+		school_location: 'Bronx, NY',
+		field_of_study: 'High School Diploma',
+		grad_date: 'June, 2007',
+	},
+];
+
+export const contEducation = [
+	{
+		school: 'BigCommerce Partners',
+		school_location: 'partners.BigCommerce.com',
+		field_of_study: 'CrownPeak Certification',
+		grad_date: 'In Progress',
+	},
+	{
+		school: 'Crownpeak',
+		school_location: 'Crownpeak Online',
+		field_of_study: 'CrownPeak Certification',
+		grad_date: 'April, 2022',
+	},
+
+	{
+		school: 'Udemy',
+		school_location: 'Udemy',
+		field_of_study: 'MERN - Ecommerce from Scratch',
+		grad_date: 'August, 2021',
+	},
+	{
+		school: 'Brad Traversy',
+		school_location: 'Udemy',
+		field_of_study: 'React Front to Back',
+		grad_date: 'July, 2021',
+	},
+	{
+		school: 'Zero to Mastery Academy',
+		school_location: 'Udemy',
+		field_of_study: 'Complete React Developer W/ (REDUX, Hooks, GraphQL)',
+		grad_date: 'January, 2021',
+	},
+	{
+		school: 'Udemy',
+		school_location: 'Udemy',
+		field_of_study: 'Advanced CSS and SASS',
+		grad_date: '',
 	},
 ];
 

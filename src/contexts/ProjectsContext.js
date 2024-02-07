@@ -17,7 +17,7 @@ export const ProjectsProvider = ({ children }) => {
 	useEffect(() => {
 		fetchProjectData();
 	}, []);
-	console.log(projects, 'context');
+
 	const value = { projects, setProjects };
 
 	return (

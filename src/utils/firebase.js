@@ -29,7 +29,7 @@ export const addCollectionAndDocs = async (collectionKey, objectsToAdd) => {
 	const batch = writeBatch(db);
 
 	objectsToAdd.forEach((obj) => {
-		const docRef = doc(collectionRef, obj.projectName.toLowerCase());
+		const docRef = doc(collectionRef, obj.title.toLowerCase());
 		batch.set(docRef, obj);
 	});
 
@@ -37,7 +37,7 @@ export const addCollectionAndDocs = async (collectionKey, objectsToAdd) => {
 };
 
 export const getPortfolioData = async () => {
-	const collectionRef = collection(db, 'portfolio-info');
+	const collectionRef = collection(db, 'portfolioDetails');
 	const q = query(collectionRef);
 
 	const querySnapshot = await getDocs(q);

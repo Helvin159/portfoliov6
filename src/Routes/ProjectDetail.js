@@ -11,7 +11,6 @@ const ProjectDetail = () => {
 	let params = useParams();
 
 	const { projects } = useContext(ProjectsContext);
-	console.log(projects);
 
 	return (
 		<div>

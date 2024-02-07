@@ -1,16 +1,12 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, { useContext } from 'react';
-
+import React from 'react';
 import { useNavigate } from 'react-router';
-import { ProjectsContext } from '../contexts/ProjectsContext';
 
-const FeaturedGallery = () => {
+const FeaturedGallery = ({ projects }) => {
 	const navigate = useNavigate();
 	const handleOnClick = () => navigate('/featured');
 	const detailsOnClick = (e) =>
 		navigate(`/featured/${e.target.dataset.projectid}`);
-
-	const { projects } = useContext(ProjectsContext);
 
 	return (
 		<div className='featured__gallery'>

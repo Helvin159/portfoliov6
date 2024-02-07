@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
-import linkedIn from '../assets/svg/icon-linkedin.svg';
-import instagram from '../assets/svg/icon-instagram.svg';
-// import emailViaGmail from '../utils/emailViaGmail';
+import linkedInImg from '../assets/svg/icon-linkedin.svg';
+import instagramImg from '../assets/svg/icon-instagram.svg';
 
-const Footer = () => {
+const Footer = ({ name, email, linkedIn, instagram, github }) => {
+	const loadingText = 'Loading...';
 	return (
 		<div className='footer'>
 			<div className='footer__contact__container'>
@@ -45,16 +45,22 @@ const Footer = () => {
 						<p>// Lets Colaborate</p>
 					</div>
 					<div className='contact-details'>
-						<h2>Helvin Rymer</h2>
+						<h2>{name ? name : loadingText}</h2>
 						<div className='links'>
 							<a href='tel:9295236682'>(929) 523-6682</a>
-							<a href='mailto:helvin159@gmail.com'>Helvin159@Gmail.com</a>
+							<a href={`mailto:${email ? email : loadingText}`}>
+								{email ? email : loadingText}
+							</a>
 						</div>
 					</div>
 					<div className='social-media'>
 						<p>Connect with me on socila media!</p>
-						<img src={linkedIn} alt='LinkedIn' />
-						<img src={instagram} alt='Instagram' />
+						<a href={linkedIn} target='_blank' rel='noreferrer'>
+							<img src={linkedInImg} alt='LinkedIn' />
+						</a>
+						<a href={instagram} target='_blank' rel='noreferrer'>
+							<img src={instagramImg} alt='Instagram' />
+						</a>
 					</div>
 				</div>
 			</div>
