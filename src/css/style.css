@@ -1062,6 +1062,8 @@ main {
       padding: 0;
       object-fit: cover;
       object-position: center; }
+    .project__video__player video::-webkit-media-controls-start-playback-button {
+      display: none; }
   .project__video__play__pause__container {
     position: absolute;
     top: 0;
@@ -1071,6 +1073,11 @@ main {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease-in; }
+    @media (max-width: 575.5px) {
+      .project__video__play__pause__container {
+        left: 0;
+        right: 0;
+        bottom: 1.3rem; } }
     .project__video__play__pause__container:hover {
       opacity: 1; }
     .project__video__play__pause__container__playBtn {

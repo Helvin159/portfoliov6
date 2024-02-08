@@ -37,6 +37,10 @@
 			object-fit: cover;
 			object-position: center;
 		}
+
+		& video::-webkit-media-controls-start-playback-button {
+			display: none;
+		}
 	}
 
 	&__play__pause__container {
@@ -49,6 +53,12 @@
 
 		opacity: 0;
 		transition: opacity 0.3s ease-in;
+
+		@media (max-width: 575.5px) {
+			left: 0;
+			right: 0;
+			bottom: 1.3rem;
+		}
 
 		&:hover {
 			opacity: 1;
