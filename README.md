@@ -9,7 +9,7 @@ Welcome to my portfolio! This project serves as a showcase of my work, personal 
 - (Potential) Bootstrap or Tailwind CSS
 - Google Firebase (NoSQL database)
 - Google Cloud Services (Content hosting)
-- EmailJS (for processing contact form)
+- EmailJS (For contact form)
 
 ## Features (Planned)
 
