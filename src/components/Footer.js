@@ -44,7 +44,6 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 		if (fName.current.value === '' || null) {
 			nameInput.classList.add('error');
 			setTimeout(() => nameInput.classList.remove('error'), 3000);
-			return;
 		}
 
 		// Check if email input is empty or doesnt match email pattern
@@ -56,8 +55,6 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 			emailInput.classList.add('error');
 
 			setTimeout(() => emailInput.classList.remove('error'), 3000);
-
-			return;
 		}
 
 		// If email and name checks, send email
