@@ -14,16 +14,13 @@
 
 		@include flex-column-reverse-portrait-tablet;
 
-		@media (max-width: 767.98px) {
+		@media (max-width: 1024px) {
+			justify-content: center;
+			align-content: center;
 		}
 
 		@media (max-width: 767.98px) {
 			padding: 0;
-		}
-
-		@media (max-width: 1024px) {
-			justify-content: center;
-			align-content: center;
 		}
 
 		&__sizing {
@@ -40,6 +37,15 @@
 		}
 
 		&__form {
+			& form > p {
+				display: none;
+			}
+
+			& form.show {
+				display: block;
+				@include brief-summ;
+			}
+
 			&__header {
 				& p {
 					@include taglines;
@@ -54,11 +60,21 @@
 			& button {
 				@include footer-btn;
 			}
+
+			& input[type='submit'] {
+				@include footer-btn;
+			}
+
+			& input.error {
+				outline: 1px solid red;
+				border: 1px solid red;
+			}
 		}
 
 		&__contact {
 			color: #ffffff;
 			text-align: left;
+			padding: 0 1rem;
 
 			& h2 {
 				color: #ffffff;
@@ -82,7 +98,11 @@
 			}
 
 			& .contact-details {
-				padding-bottom: 3rem;
+				padding-bottom: 4.9rem;
+
+				@media (max-width: 575.5px) {
+					padding-bottom: 1rem;
+				}
 
 				& .links {
 					padding-bottom: 1rem;

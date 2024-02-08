@@ -9,12 +9,12 @@ import {
 } from 'firebase/firestore';
 
 const firebaseConfig = {
-	apiKey: 'AIzaSyDKGdbUkrQDCxnHKp-UqYHPzAonGcbKo5s',
-	authDomain: 'portfolio-db-b6a63.firebaseapp.com',
-	projectId: 'portfolio-db-b6a63',
-	storageBucket: 'portfolio-db-b6a63.appspot.com',
-	messagingSenderId: '111183607612',
-	appId: '1:111183607612:web:cb965927f9a9c1cfd65039',
+	apiKey: process.env.REACT_APP_APIKEY,
+	authDomain: process.env.REACT_APP_AUTHDOMAIN,
+	projectId: process.env.REACT_APP_PROJECTID,
+	storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+	messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+	appId: process.env.REACT_APP_APPId,
 };
 
 // initialize Firebase
