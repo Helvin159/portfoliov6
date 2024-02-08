@@ -2,6 +2,7 @@
 import React, { useRef } from 'react';
 import linkedInImg from '../assets/svg/icon-linkedin.svg';
 import instagramImg from '../assets/svg/icon-instagram.svg';
+import githubImg from '../assets/svg/icon-github-square.svg';
 import emailjs from 'emailjs-com';
 
 import { emailRegex } from '../utils/utils';
@@ -23,23 +24,19 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 
 		let msg = `
 		Message:
-		${
-			fMsg.current.value
-				? fMsg.current.value.toString().toLowerCase()
-				: 'No message.'
-		}
+		${fMsg.current.value ? fMsg.current.value.toString() : 'No message.'}
 
 		Project Type:
 		${
 			fPjType.current.value
-				? fPjType.current.value.toString().toLowerCase()
+				? fPjType.current.value.toString()
 				: 'No project type details.'
 		}
 		`;
 
 		let templateParams = {
-			from_name: fName.current.value.toString().toLowerCase(),
-			from_email: fEmail.current.value.toString().toLowerCase(),
+			from_name: fName.current.value.toString(),
+			from_email: fEmail.current.value.toString(),
 			from_message: msg,
 		};
 
@@ -157,7 +154,7 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 							<img src={instagramImg} alt='Instagram' />
 						</a>
 						<a href={github} target='_blank' rel='noreferrer'>
-							<img src={instagramImg} alt='Instagram' />
+							<img src={githubImg} alt='Github' />
 						</a>
 					</div>
 				</div>
