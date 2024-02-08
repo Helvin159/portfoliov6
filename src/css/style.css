@@ -579,13 +579,13 @@ main {
     @media (max-width: 1024px) {
       .footer__contact__container {
         flex-direction: column-reverse; } }
-    @media (max-width: 767.98px) {
-      .footer__contact__container {
-        padding: 0; } }
     @media (max-width: 1024px) {
       .footer__contact__container {
         justify-content: center;
         align-content: center; } }
+    @media (max-width: 767.98px) {
+      .footer__contact__container {
+        padding: 0; } }
     .footer__contact__container__sizing {
       width: 63%;
       margin: 0 auto; }

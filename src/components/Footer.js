@@ -2,20 +2,49 @@
 import React, { useRef } from 'react';
 import linkedInImg from '../assets/svg/icon-linkedin.svg';
 import instagramImg from '../assets/svg/icon-instagram.svg';
-
+import emailjs from 'emailjs-com';
 const Footer = ({ name, email, linkedIn, instagram, github }) => {
-	const loadingText = 'Loading...';
-	const fName = useRef();
-	const fEmail = useRef();
-	const fMsg = useRef();
-	const fPjType = useRef();
+	const loadingText = 'loading...';
 
-	const action = (e) => {
+	const fName = useRef(),
+		fEmail = useRef(),
+		fMsg = useRef(),
+		fPjType = useRef(),
+		form = useRef();
+
+	const sendEmail = (e) => {
 		e.preventDefault();
-		console.log(fName.current.value);
-		let arr = ['1', '2'];
 
-		console.log(typeof arr);
+		let msg = `
+		Message:
+		${fMsg.current.value.toString().toLowerCase()}
+
+		Project Type:
+		${fPjType.current.value.toString().toLowerCase()}
+		`;
+
+		let templateParams = {
+			from_name: fName.current.value.toString().toLowerCase(),
+			from_email: fEmail.current.value.toString().toLowerCase(),
+			from_message: msg,
+		};
+
+		emailjs
+			.send(
+				process.env.REACT_APP_SERVICE_ID,
+				process.env.REACT_APP_TEMPLATE_ID,
+				templateParams,
+				process.env.REACT_APP_PUBLIC_KEY
+			)
+			.then(
+				(response) => {
+					console.log('SUCCESS!', response.status, response.text);
+				},
+				(err) => {
+					console.log('FAILED...', err);
+					alert('Message failed, please try again...');
+				}
+			);
 	};
 
 	return (
@@ -25,7 +54,7 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 					<div className='footer__contact__container__form__header'>
 						<p>// Drop Me A Line</p>
 					</div>
-					<form>
+					<form ref={form}>
 						<input
 							type='text'
 							id='name'
@@ -56,7 +85,7 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 						/>
 					</form>
 
-					<button type='submit' onClick={action}>
+					<button type='submit' onClick={sendEmail}>
 						send
 					</button>
 				</div>
@@ -79,6 +108,9 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 							<img src={linkedInImg} alt='LinkedIn' />
 						</a>
 						<a href={instagram} target='_blank' rel='noreferrer'>
+							<img src={instagramImg} alt='Instagram' />
+						</a>
+						<a href={github} target='_blank' rel='noreferrer'>
 							<img src={instagramImg} alt='Instagram' />
 						</a>
 					</div>
