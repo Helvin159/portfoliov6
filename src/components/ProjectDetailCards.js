@@ -24,7 +24,11 @@ const ProjectDetailCards = ({
 			<div className='project__cards__container'>
 				<div className='project__cards__container__card'>
 					<div className='project__cards__container__card__img'>
-						<img src={landscapeS2 ? landscapeS2 : imgFour} alt={name} />
+						<img
+							src={landscapeS2 ? landscapeS2 : imgFour}
+							alt={name}
+							loading='lazy'
+						/>
 					</div>
 					<div className='project__cards__container__card__summary'>
 						<h3>{`About ${respOne.title ? respOne.title : comingSoon}`}</h3>
@@ -33,7 +37,11 @@ const ProjectDetailCards = ({
 				</div>
 				<div className='project__cards__container__card'>
 					<div className='project__cards__container__card__img'>
-						<img src={landscapeS3 ? landscapeS3 : imgFive} alt={name} />
+						<img
+							src={landscapeS3 ? landscapeS3 : imgFive}
+							alt={name}
+							loading='lazy'
+						/>
 					</div>
 					<div className='project__cards__container__card__summary'>
 						<h3>{`About ${respTwo.title ? respTwo.title : comingSoon}`}</h3>
@@ -43,13 +51,25 @@ const ProjectDetailCards = ({
 			</div>
 			<div className='project__cards__gallery'>
 				<div className='project__cards__gallery__card'>
-					<img src={portraitS1 ? portraitS1 : imgOne} alt={name} />
+					<img
+						src={portraitS1 ? portraitS1 : imgOne}
+						alt={name}
+						loading='lazy'
+					/>
 				</div>
 				<div className='project__cards__gallery__card'>
-					<img src={portraitS2 ? portraitS2 : imgTwo} alt={name} />
+					<img
+						src={portraitS2 ? portraitS2 : imgTwo}
+						alt={name}
+						loading='lazy'
+					/>
 				</div>
 				<div className='project__cards__gallery__card'>
-					<img src={portraitS3 ? portraitS3 : imgThree} alt={name} />
+					<img
+						src={portraitS3 ? portraitS3 : imgThree}
+						alt={name}
+						loading='lazy'
+					/>
 				</div>
 			</div>
 		</div>

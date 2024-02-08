@@ -124,7 +124,6 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 							ref={fMsg}
 						/>
 					</form>
-
 					<button type='submit' onClick={sendEmail}>
 						send
 					</button>

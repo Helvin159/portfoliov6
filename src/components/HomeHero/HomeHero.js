@@ -27,7 +27,7 @@ const HomeHero = ({
 			<div className='hero__container__main'>
 				<Header headline={headline} description={description} />
 				<div className='hero__container__main__img'>
-					<img src={heroImg} alt='Hero Img' />
+					<img src={heroImg} alt='Hero Img' loading='lazy' />
 				</div>
 			</div>
 			<Statistics

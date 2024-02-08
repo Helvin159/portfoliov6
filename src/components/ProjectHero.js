@@ -20,7 +20,7 @@ const ProjectHero = ({ name, img, about, langs }) => {
 				</div>
 			</div>
 			<div className='project__hero__img'>
-				<img src={img} alt={name} />
+				<img src={img} alt={name} loading='lazy' />
 			</div>
 			<div className='project__hero__about'>
 				<h2>// About the project</h2>

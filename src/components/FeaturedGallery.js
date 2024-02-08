@@ -14,7 +14,11 @@ const FeaturedGallery = ({ projects }) => {
 			<div className='featured__gallery__items'>
 				{projects?.slice(0, 4).map((i, k) => (
 					<div className='featured__gallery__items__item' key={k}>
-						<img src={i.screenshots.landscape.s1} alt={i.projectName} />
+						<img
+							src={i.screenshots.landscape.s1}
+							alt={i.projectName}
+							loading='lazy'
+						/>
 						<div className='overlay'>
 							<button data-projectid={i.projectId} onClick={detailsOnClick}>
 								see details
