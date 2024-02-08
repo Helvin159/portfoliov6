@@ -643,6 +643,26 @@ main {
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none; }
+    .footer__contact__container__form input[type='submit'] {
+      cursor: pointer;
+      max-width: 504px;
+      width: 100%;
+      height: 46px;
+      padding: 0px 8px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 20px;
+      font-family: var(--primary-font);
+      line-height: 26px;
+      text-transform: uppercase;
+      outline: none;
+      margin: 3rem auto;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
     .footer__contact__container__contact {
       color: #ffffff;
       text-align: left; }
@@ -945,14 +965,15 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
     text-align: center;
     padding: 0 4rem; }
     @media (max-width: 575.5px) {
       .project__cards__container {
         padding: 0 1rem; } }
     .project__cards__container__card {
-      width: calc(100% / 2); }
+      width: calc(100% / 2);
+      max-width: 668.5px; }
       @media (max-width: 767.98px) {
         .project__cards__container__card {
           width: 100%; } }
