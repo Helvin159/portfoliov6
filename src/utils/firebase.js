@@ -2,11 +2,22 @@ import { initializeApp } from 'firebase/app';
 import {
 	collection,
 	doc,
+	getDoc,
 	getDocs,
 	getFirestore,
 	query,
+	setDoc,
 	writeBatch,
 } from 'firebase/firestore';
+
+import {
+	GoogleAuthProvider,
+	getAuth,
+	onAuthStateChanged,
+	signInWithPopup,
+	signInWithRedirect,
+	signOut,
+} from 'firebase/auth';
 
 const firebaseConfig = {
 	apiKey: process.env.REACT_APP_APIKEY,
@@ -21,13 +32,67 @@ const firebaseConfig = {
 // eslint-disable-next-line
 const firebaseApp = initializeApp(firebaseConfig);
 
+// Google Provider
+const googleProvider = new GoogleAuthProvider();
+googleProvider.setCustomParameters({
+	prompt: 'select_account',
+});
+
 export const db = getFirestore();
+
+// Get Auth
+export const auth = getAuth();
+
+// Sign in with redirect
+export const signInWRedirect = () => {
+	signInWithRedirect(auth, googleProvider);
+};
+
+export const signInWPopup = () => signInWithPopup(auth, googleProvider);
+
+// Create user from signin
+export const createUserDocFromAuth = async (userAuth, additionalInfo = {}) => {
+	if (!userAuth) return;
+
+	const userDocRef = doc(db, 'users', userAuth.uid);
+
+	const userSnapShot = await getDoc(userDocRef);
+
+	if (!userSnapShot.exists()) {
+		const { displayName, email } = userAuth;
+		const createdAt = new Date();
+
+		console.log(userAuth);
+
+		try {
+			await setDoc(userDocRef, {
+				displayName,
+				email,
+				createdAt,
+				...additionalInfo,
+			});
+		} catch (e) {
+			console.log(e.message);
+		}
+	}
+	return userDocRef;
+};
+
+// Signout
+export const signoutUser = async () => {
+	await signOut(auth);
+};
+
+export const onAuthStateChangedListener = (callback) => {
+	onAuthStateChanged(auth, callback);
+};
 
 // Add data to Firestroe Database
 export const addCollectionAndDocs = async (collectionKey, objectsToAdd) => {
 	const collectionRef = collection(db, collectionKey);
 	const batch = writeBatch(db);
 
+	// console.log(objectsToAdd);
 	objectsToAdd.forEach((obj) => {
 		const docRef = doc(collectionRef, obj.title.toLowerCase());
 		batch.set(docRef, obj);

@@ -24,7 +24,7 @@ const AboutHero = ({ title, copy, keySkills }) => {
 				</div>
 			</div>
 			<div className='about__hero__profile__img'>
-				<img src={profileImg} alt='Self portrait' />
+				<img src={profileImg} alt='Self portrait' loading='lazy' />
 			</div>
 		</div>
 	);

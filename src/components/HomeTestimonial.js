@@ -20,7 +20,7 @@ const HomeTestimonial = () => {
 					</p>
 				</div>
 				<div className='home__testimonial__card__avatar'>
-					<img src={avatarImg} alt='custmer' />
+					<img src={avatarImg} alt='custmer' loading='lazy' />
 				</div>
 			</div>
 		</div>

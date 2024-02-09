@@ -1,0 +1,46 @@
+.new__project {
+	&__form-container {
+		@include top-container-width;
+
+		&__form {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: baseline;
+
+			max-width: 1024px;
+			width: 100%;
+			margin: 0 auto;
+
+			&__input-group {
+				width: calc(100% / 2);
+				max-width: 600px;
+				margin: 0 auto;
+				flex: calc(100% / 2);
+				padding: 0 2rem;
+				& h2,
+				h3 {
+					@include title3;
+					text-transform: capitalize;
+				}
+
+				& label {
+					display: block;
+					@include default-typography;
+				}
+				& input {
+					@include input-text;
+				}
+				& textarea {
+					@include input-text;
+					height: 150px;
+				}
+
+				& button {
+					@include footer-btn;
+				}
+			}
+		}
+	}
+}

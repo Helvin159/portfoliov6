@@ -16,7 +16,11 @@ const MoreProjectsGallery = ({ projects }) => {
 			<div className='featured__gallery__items more-projects'>
 				{projects?.map((i, k) => (
 					<div className='featured__gallery__items__item item' key={k}>
-						<img src={i.screenshots.landscape.s1} alt={i.projectName} />
+						<img
+							src={i.screenshots.landscape.s1}
+							alt={i.projectName}
+							loading='lazy'
+						/>
 						<div className='featured__gallery__items__item__details'>
 							<div className='featured__gallery__items__item__details__title'>
 								<p data-projectid={i.projectId} onClick={detailsOnClick}>

@@ -383,7 +383,7 @@ export const awards = [
 		award: 'Leadership Award',
 		presenter: 'Keller Williams NYC',
 		summary:
-			"I earned this award by eagerly helping my team and others within the company to be better. I very much believe in constructive criticism, whether I'm the person being criticized, or I'm the one criticizing.",
+			'I attained this award through my enthusiastic dedication to assisting both my team and colleagues across the company in their growth. I strongly advocate for constructive criticism, whether I am on the receiving end or offering insights myself.',
 	},
 ];
 
