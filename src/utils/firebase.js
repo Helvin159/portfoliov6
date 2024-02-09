@@ -81,6 +81,7 @@ export const createUserDocFromAuth = async (userAuth, additionalInfo = {}) => {
 // Signout
 export const signoutUser = async () => {
 	await signOut(auth);
+	window.scrollTo(0, 0);
 	window.location.reload();
 };
 
