@@ -81,6 +81,7 @@ export const createUserDocFromAuth = async (userAuth, additionalInfo = {}) => {
 // Signout
 export const signoutUser = async () => {
 	await signOut(auth);
+	window.location.reload();
 };
 
 export const onAuthStateChangedListener = (callback) => {

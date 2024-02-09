@@ -7,7 +7,7 @@ import {
 export const UserContext = createContext({
 	user: null,
 	isAdmin: false,
-	setIsUser: () => false,
+	setUser: () => false,
 	setIsAdmin: () => false,
 });
 
