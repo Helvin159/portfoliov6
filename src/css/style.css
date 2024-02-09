@@ -1126,7 +1126,8 @@ main {
       margin: 0 auto;
       padding: 0;
       object-fit: cover;
-      object-position: center; }
+      object-position: center;
+      border-radius: 5px; }
     .project__video__player video::-webkit-media-controls-start-playback-button {
       display: none; }
   .project__video__play__pause__container {
