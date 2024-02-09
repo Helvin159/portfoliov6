@@ -1,7 +1,13 @@
-@import './base/base';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+// font-family: 'Roboto Mono', monospace;
 
-// Utilities
-@import './utilities/flex';
+:root {
+	--primary-bg-color: #161616;
+	--secondary-bg-color: #2e2e2e;
+	--input-bg-color: #1d1d1d;
+	--btn-bg-color: #ffffff;
+	--primary-font: 'Roboto Mono', monospace;
+}
 
 // Mixins
 @import './mixins/buttons';
@@ -9,6 +15,13 @@
 @import './mixins/text';
 @import './mixins/inputs';
 @import './mixins/media-queries';
+@import './mixins/sizing';
+
+// Base
+@import './base/base';
+
+// Utilities
+@import './utilities/flex';
 
 // Components
 @import './components/header';
@@ -22,3 +35,4 @@
 @import './components/project-hero';
 @import './components/project-detail-cards';
 @import './components/project-detail-video';
+@import './components/new-project-form';

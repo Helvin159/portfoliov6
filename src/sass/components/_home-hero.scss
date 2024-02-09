@@ -1,13 +1,21 @@
 .hero__container {
 	background-color: var(--primary-bg-color);
 	color: #fff;
-	margin: 0;
 	padding: 1rem 5rem 0;
 
+	// Mixins
+	@include top-container-width;
+
+	// Queries
+
+	@media (max-width: 1024px) {
+		padding: 1rem 5rem 0;
+	}
 	@media (max-width: 575.5px) {
 		padding: 1rem 1rem 0;
 	}
 
+	// Children
 	&__location {
 		padding-bottom: 0.2rem;
 		& p {
@@ -52,7 +60,7 @@
 				@include brief-summ;
 
 				align-self: flex-end;
-				text-align: justify;
+				text-align: left;
 				width: 75%;
 				padding-bottom: 2rem;
 				@media (max-width: 1024px) {
