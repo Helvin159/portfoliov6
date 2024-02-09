@@ -156,7 +156,7 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 							</div>
 						</div>
 						<div className='social-media'>
-							<p>Connect with me on socila media!</p>
+							<p>Connect with me on social media!</p>
 							<a href={linkedIn} target='_blank' rel='noreferrer'>
 								<img src={linkedInImg} alt='LinkedIn' />
 							</a>
