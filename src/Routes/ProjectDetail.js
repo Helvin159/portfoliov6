@@ -17,7 +17,10 @@ const ProjectDetail = () => {
 			{projects?.map((i, k) => {
 				const { projectId } = i;
 
-				if (params.projectId === projectId) {
+				if (
+					params.projectId.toString().toLowerCase() ===
+					projectId.toString().toLowerCase()
+				) {
 					const {
 						projectName,
 						workDone,
