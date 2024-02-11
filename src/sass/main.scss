@@ -16,6 +16,7 @@
 @import './mixins/inputs';
 @import './mixins/media-queries';
 @import './mixins/sizing';
+@import './mixins/object-fit';
 
 // Base
 @import './base/base';
@@ -36,3 +37,7 @@
 @import './components/project-detail-cards';
 @import './components/project-detail-video';
 @import './components/new-project-form';
+@import './components/profile-hero';
+@import './components/profile-projects';
+@import './components/profile-body';
+@import './components/edit-profile-btns';

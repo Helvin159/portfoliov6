@@ -1,0 +1,6 @@
+@mixin object-fit-rules {
+	object-fit: cover;
+	object-position: center;
+	-o-object-fit: cover;
+	-o-object-position: center;
+}

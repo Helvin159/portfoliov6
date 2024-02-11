@@ -1,0 +1,28 @@
+.edit-profile {
+	& h2 {
+		@include taglines;
+	}
+	&__btn-group {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		flex-shrink: 1;
+		flex-grow: 1;
+		justify-content: space-around;
+
+		& a {
+			@include generic-btn;
+			display: block;
+			text-align: center;
+			align-items: center;
+			line-height: 42.5px;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin-bottom: 1rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

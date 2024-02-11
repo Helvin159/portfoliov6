@@ -8,7 +8,6 @@ import emailjs from 'emailjs-com';
 import { emailRegex } from '../utils/utils';
 import { signInWPopup, signoutUser } from '../utils/firebase';
 import { UserContext } from '../contexts/UserContext';
-import { Link } from 'react-router-dom';
 
 const Footer = ({ name, email, linkedIn, instagram, github }) => {
 	const loadingText = 'loading...';
@@ -173,7 +172,6 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 					<p>Copyright</p>
 					{!user.user && <button onClick={signInWithPopup}>Admin?</button>}
 					{user.user && <button onClick={signoutUser}>Signout</button>}
-					{user.isAdmin !== false && <Link to='/new-project'>Add Project</Link>}
 				</div>
 			</div>
 		</div>
