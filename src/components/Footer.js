@@ -15,9 +15,9 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 
 	const user = useContext(UserContext);
 
-	if (user !== null) {
-		console.log(user);
-	}
+	// if (user !== null) {
+	// 	console.log(user);
+	// }
 
 	const fName = useRef(),
 		fEmail = useRef(),
@@ -80,12 +80,12 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 					process.env.REACT_APP_PUBLIC_KEY
 				)
 				.then(
-					(response) => {
-						console.log('SUCCESS!', response.status, response.text);
+					(res) => {
+						// console.log('SUCCESS!', res.status, res.text);
 						alert('Message sent');
 					},
 					(err) => {
-						console.log('FAILED...', err);
+						// console.log('FAILED...', err);
 						alert('Message failed, please try again...');
 					}
 				);
