@@ -62,6 +62,27 @@
 	-moz-appearance: none;
 	appearance: none;
 }
+@mixin profile-btn {
+	cursor: pointer;
+	margin: 0.5rem auto;
+	max-width: 266px;
+	width: 100%;
+	height: 46px;
+	padding: 0px 8px;
+	border: 0;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: var(--primary-font);
+	line-height: 26px;
+	text-transform: uppercase;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 
 @mixin overlay-btn {
 	cursor: pointer;
@@ -125,4 +146,20 @@
 	outline: none;
 	margin-right: 8px;
 	text-decoration: none;
+}
+
+@mixin mobile-menu-btn {
+	text-align: right;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	@media (min-width: 575.5099px) {
+		display: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
 }

@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import {
+	addDoc,
 	collection,
 	doc,
 	getDoc,
@@ -103,6 +104,23 @@ export const addCollectionAndDocs = async (collectionKey, objectsToAdd) => {
 	await batch.commit();
 };
 
+export const addDocToCollection = async (collectionKey, obj) => {
+	try {
+		const docRefTwo = await setDoc(
+			doc(db, collectionKey, obj.projectName),
+			obj
+		);
+		console.log(docRefTwo, 'success');
+	} catch (e) {
+		console.log(e.message, 'error');
+	}
+};
+
+export const addDocToCollectionAndId = async (collectionKey, obj) => {
+	const docRef = await addDoc(collection(db, collectionKey), obj);
+	console.log(docRef, 'addDoc method');
+};
+
 export const getPortfolioData = async () => {
 	const collectionRef = collection(db, 'portfolioDetails');
 	const q = query(collectionRef);
@@ -132,4 +150,8 @@ export const getProjectsData = async () => {
 	}, {});
 
 	return projectMap;
+};
+
+export const updateField = async (fieldId) => {
+	console.log(fieldId);
 };

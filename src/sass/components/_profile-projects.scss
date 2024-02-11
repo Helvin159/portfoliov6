@@ -1,0 +1,80 @@
+.profile-projects {
+	& h2 {
+		@include taglines;
+	}
+	&__container {
+		padding: 0 0 3rem;
+		&__project {
+			background-color: var(--secondary-bg-color);
+			padding: 1.5rem;
+			margin: 0 auto;
+			margin-bottom: 2rem;
+
+			& h3 {
+				@include heading-two;
+				margin: 0;
+				padding: 0;
+			}
+
+			& p {
+				@include default-typography;
+				margin: 0;
+				padding-bottom: 2rem;
+			}
+
+			&:last-child {
+				margin-bottom: auto;
+			}
+			&__img-group {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: flex-start;
+
+				&__portrait {
+					max-height: 400px;
+					height: 100%;
+					width: 100%;
+					padding: 0 0.5rem;
+
+					@media (max-width: 575.5px) {
+						margin: 0 auto;
+						text-align: center;
+					}
+
+					& img {
+						max-width: 392px;
+						max-height: 400px;
+						width: 100%;
+						height: 100%;
+						@include object-fit-rules;
+					}
+				}
+
+				&__landscape {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					justify-content: space-between;
+					height: 400px;
+					width: 100%;
+					padding: 0 0.5rem;
+
+					@media (max-width: 575.5px) {
+						display: none;
+					}
+
+					&__img {
+						max-width: 409px;
+						max-height: 188px;
+						& img {
+							width: 100%;
+							height: 100%;
+							@include object-fit-rules;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -6,6 +6,7 @@ import {
 
 export const UserContext = createContext({
 	user: null,
+	avatarUrl: null,
 	isAdmin: false,
 	setUser: () => false,
 	setIsAdmin: () => false,
@@ -14,6 +15,7 @@ export const UserContext = createContext({
 export const UserProvider = ({ children }) => {
 	const [user, setUser] = useState(null);
 	const [isAdmin, setIsAdmin] = useState(false);
+	const [avatarUrl, setAvatarUrl] = useState(null);
 
 	useEffect(() => {
 		const unsubscribe = onAuthStateChangedListener((user) => {
@@ -21,6 +23,7 @@ export const UserProvider = ({ children }) => {
 			if (user) {
 				createUserDocFromAuth(user);
 				setUser(user);
+				setAvatarUrl(user.photoURL);
 			}
 
 			// check if user is admin
@@ -29,12 +32,13 @@ export const UserProvider = ({ children }) => {
 			} else {
 				setIsAdmin(false);
 			}
+			// console.log(user, 'user');
 		});
 
 		return unsubscribe;
 	}, []);
 
-	const value = { user, setUser, isAdmin, setIsAdmin };
+	const value = { user, avatarUrl, setUser, isAdmin, setIsAdmin };
 
 	return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };

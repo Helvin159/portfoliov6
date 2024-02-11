@@ -6,18 +6,17 @@ import githubImg from '../assets/svg/icon-github-square.svg';
 import emailjs from 'emailjs-com';
 
 import { emailRegex } from '../utils/utils';
-import { signInWRedirect, signoutUser } from '../utils/firebase';
+import { signInWPopup, signoutUser } from '../utils/firebase';
 import { UserContext } from '../contexts/UserContext';
-import { Link } from 'react-router-dom';
 
 const Footer = ({ name, email, linkedIn, instagram, github }) => {
 	const loadingText = 'loading...';
 
 	const user = useContext(UserContext);
 
-	if (user.user) {
-		console.log(user);
-	}
+	// if (user !== null) {
+	// 	console.log(user);
+	// }
 
 	const fName = useRef(),
 		fEmail = useRef(),
@@ -80,20 +79,20 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 					process.env.REACT_APP_PUBLIC_KEY
 				)
 				.then(
-					(response) => {
-						console.log('SUCCESS!', response.status, response.text);
+					(res) => {
+						// console.log('SUCCESS!', res.status, res.text);
 						alert('Message sent');
 					},
 					(err) => {
-						console.log('FAILED...', err);
+						// console.log('FAILED...', err);
 						alert('Message failed, please try again...');
 					}
 				);
 		}
 	};
 
-	const signInWithGoogleRedirect = async () => {
-		await signInWRedirect();
+	const signInWithPopup = async () => {
+		await signInWPopup();
 	};
 
 	return (
@@ -171,11 +170,8 @@ const Footer = ({ name, email, linkedIn, instagram, github }) => {
 				</div>
 				<div className='footer__content__copyright__container'>
 					<p>Copyright</p>
-					{!user.user && (
-						<button onClick={signInWithGoogleRedirect}>Admin?</button>
-					)}
+					{!user.user && <button onClick={signInWithPopup}>Admin?</button>}
 					{user.user && <button onClick={signoutUser}>Signout</button>}
-					{user.isAdmin !== false && <Link to='/new-project'>Add Project</Link>}
 				</div>
 			</div>
 		</div>

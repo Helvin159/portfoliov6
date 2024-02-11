@@ -5,7 +5,7 @@ const Header = ({ headline, description }) => {
 		'i am a hip-hop loving front-end developer with 2+ years of experience.';
 
 	const defaultDescription =
-		'Welcome to my hip-hop-inspired portfolio. I enjoy front-end projects and collaborating on art and design. As a developer, I merge my passion for hip-hop with coding to craft visually striking experiences.';
+		'Explore my hip-hop-inspired portfolio, where front-end projects seamlessly blend with art and design collaborations. As a developer, I fuse my love for hip-hop with coding expertise to create visually stunning experiences.';
 	return (
 		<div className='hero__container__main__header'>
 			<h1>{headline ? headline : defaultHeadline}</h1>

@@ -1,19 +1,22 @@
 import { Route, Routes } from 'react-router';
-import { useContext } from 'react';
-import { UserContext } from './contexts/UserContext';
 import Outlet from './Routes/Outlet';
+
+// Main pages
 import Home from './Routes/Home';
 import About from './Routes/About';
-import Featured from './Routes/Featured';
 import Contact from './Routes/Contact';
+import Featured from './Routes/Featured';
 import ProjectDetail from './Routes/ProjectDetail';
+
+// Profile & Nested pages
+import Profile from './Routes/Profile';
 import AddNewProject from './Routes/AddNewProject';
 
+// Compiled SCSS
 import './css/style.css';
+import Hero from './components/Hero';
 
 const App = () => {
-	const user = useContext(UserContext);
-
 	return (
 		<Routes>
 			<Route path='/' element={<Outlet />}>
@@ -23,9 +26,20 @@ const App = () => {
 				<Route path='featured/:projectId' element={<ProjectDetail />} />
 				<Route path='contact' element={<Contact />} />
 
-				{user.isAdmin !== false && (
-					<Route path='new-project' element={<AddNewProject />} />
-				)}
+				<Route path='profile' element={<Profile />} />
+				<Route path='profile/new-project' element={<AddNewProject />} />
+				<Route
+					path='profile/update-bio'
+					element={<Hero text={'Coming soon'} />}
+				/>
+				<Route
+					path='profile/edit-projects'
+					element={<Hero text={'Coming soon'} />}
+				/>
+				<Route
+					path='profile/edit-projects/:projectId'
+					element={<Hero text={'Coming soon'} />}
+				/>
 			</Route>
 		</Routes>
 	);

@@ -11,18 +11,18 @@ import { UserProvider } from './contexts/UserContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<MobileMenueProvider>
-			<BrowserRouter>
-				<ScrollToTop>
-					<UserProvider>
-						<PortfolioProvider>
-							<ProjectsProvider>
+		<BrowserRouter>
+			<ScrollToTop>
+				<UserProvider>
+					<PortfolioProvider>
+						<ProjectsProvider>
+							<MobileMenueProvider>
 								<App />
-							</ProjectsProvider>
-						</PortfolioProvider>
-					</UserProvider>
-				</ScrollToTop>
-			</BrowserRouter>
-		</MobileMenueProvider>
+							</MobileMenueProvider>
+						</ProjectsProvider>
+					</PortfolioProvider>
+				</UserProvider>
+			</ScrollToTop>
+		</BrowserRouter>
 	</React.StrictMode>
 );
