@@ -13,7 +13,6 @@
 		&__container {
 			color: #ffffff;
 			width: calc(100% / 2);
-			position: relative;
 
 			@media (max-width: 575.5px) {
 				width: 100%;
@@ -41,6 +40,11 @@
 			}
 
 			&__navs {
+				@media (max-width: 575.5px) {
+					text-align: right;
+					padding: 1.5rem 0.5rem 0;
+				}
+
 				&__desktop {
 					@media (max-width: 575.5px) {
 						display: none;
@@ -73,20 +77,31 @@
 				}
 
 				&__mobile {
-					width: 9rem;
 					position: absolute;
-					top: 4.5rem;
+					top: 0;
 					right: 0;
+					bottom: 0;
+					left: 0;
 					background-color: rgba(0, 0, 0, 0.95);
-					display: none;
+					z-index: 10;
 
-					// @media (max-width: 575.5px) {
-					// 	display: block;
-					// }
+					& .close-btn {
+						@include mobile-menu-btn;
+						padding: 2rem;
+
+						& img {
+							max-width: 120px;
+							width: 100%;
+						}
+					}
 
 					& ul {
 						list-style-type: none;
 						padding: 0;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
 					}
 
 					& li {
@@ -104,8 +119,8 @@
 
 						& a {
 							text-decoration: none;
-							font-size: 18px;
-							line-height: 22px;
+							font-size: 46px;
+							line-height: 70px;
 
 							color: #ffffff;
 						}
@@ -113,8 +128,22 @@
 						& button {
 							@include header-btn;
 
+							font-size: 46px;
+							background-color: transparent;
+							width: 100%;
+							text-transform: capitalize;
+							line-height: 70px;
 							margin: 0;
 						}
+					}
+				}
+
+				& .open-btn {
+					@include mobile-menu-btn;
+					& img {
+						width: 100%;
+						max-width: 25px;
+						font-size: 1rem;
 					}
 				}
 			}

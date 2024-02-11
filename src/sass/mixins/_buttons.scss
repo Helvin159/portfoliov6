@@ -126,3 +126,18 @@
 	margin-right: 8px;
 	text-decoration: none;
 }
+
+@mixin mobile-menu-btn {
+	text-align: right;
+	background-color: transparent;
+	border: none;
+	outline: none;
+
+	@media (min-width: 575.5099px) {
+		display: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
