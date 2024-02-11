@@ -10,10 +10,7 @@
 		& img {
 			width: 100%;
 			height: 324px;
-			object-fit: cover;
-			object-position: center;
-			-o-object-fit: cover;
-			-o-object-position: center;
+			@include object-fit-rules;
 		}
 	}
 
@@ -24,11 +21,20 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 2rem 2rem 0;
+
+		@media (max-width: 575.5px) {
+			flex-direction: column;
+		}
 		&__user {
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-start;
 			align-items: center;
+
+			@media (max-width: 575.5px) {
+				flex-direction: column;
+				height: 216px;
+			}
 
 			&__avatar {
 				& img {
