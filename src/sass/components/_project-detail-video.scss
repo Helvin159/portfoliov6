@@ -34,8 +34,7 @@
 			height: 100%;
 			margin: 0 auto;
 			padding: 0;
-			object-fit: cover;
-			object-position: center;
+			@include object-fit-rules;
 			border-radius: 5px;
 		}
 

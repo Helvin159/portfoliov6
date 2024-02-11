@@ -21,7 +21,7 @@
 			text-align: center;
 		}
 
-		@media (max-width: 767.98px) {
+		@media (max-width: 768px) {
 			width: 90%;
 		}
 		&__bio {
@@ -113,7 +113,7 @@
 				max-width: 28.75rem;
 				width: 100%;
 				height: 100%;
-				object-fit: cover;
+				@include object-fit-rules;
 				border-radius: 5px;
 
 				@media (max-width: 1035px) {

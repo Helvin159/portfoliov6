@@ -9,9 +9,14 @@
 		flex-shrink: 1;
 		flex-grow: 1;
 		justify-content: space-around;
+		padding-right: 1rem;
+		@media (max-width: 768px) {
+			padding-bottom: 2rem;
+			padding-right: 0;
+		}
 
 		& a {
-			@include generic-btn;
+			@include profile-btn;
 			display: block;
 			text-align: center;
 			align-items: center;
@@ -19,6 +24,12 @@
 			text-decoration: none;
 			text-transform: uppercase;
 			margin-bottom: 1rem;
+			margin-left: 0;
+
+			@media (max-width: 768px) {
+				margin: 1rem auto;
+				width: 80%;
+			}
 
 			&:last-child {
 				margin-bottom: 0;

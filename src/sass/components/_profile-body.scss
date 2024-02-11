@@ -7,10 +7,24 @@
 	width: 100%;
 	padding: 0 2.5rem;
 
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+	@media (max-width: 575.5px) {
+		padding: 0 1rem;
+	}
+
 	&__left-container {
 		width: calc(100% / 3);
 	}
 	&__right-container {
 		width: calc((100% / 3) * 2);
+	}
+
+	&__left-container,
+	&__right-container {
+		@media (max-width: 768px) {
+			width: 100%;
+		}
 	}
 }
