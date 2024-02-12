@@ -1309,12 +1309,22 @@ main {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto; }
+    @media (max-width: 768px) {
+      .new__project__form-container__form {
+        flex-direction: column;
+        flex-wrap: wrap; } }
     .new__project__form-container__form__input-group {
       width: calc(100% / 2);
       max-width: 600px;
       margin: 0 auto;
       flex: calc(100% / 2);
       padding: 0 2rem; }
+      @media (max-width: 768px) {
+        .new__project__form-container__form__input-group {
+          max-width: 95%;
+          width: 100%;
+          flex: 100%;
+          margin: 0 auto; } }
       .new__project__form-container__form__input-group h2,
       .new__project__form-container__form__input-group h3 {
         color: #ffffff;
@@ -1391,6 +1401,21 @@ main {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none; }
+      .new__project__form-container__form__input-group__languages label {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 95%; }
+        .new__project__form-container__form__input-group__languages label img {
+          max-height: 30px;
+          max-width: 30px;
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+          object-fit: cover;
+          object-position: center;
+          -o-object-fit: cover;
+          -o-object-position: center; }
 
 .profile__header {
   width: 100%;
@@ -1648,3 +1673,34 @@ main {
         width: 80%; } }
     .edit-profile__btn-group a:last-child {
       margin-bottom: 0; }
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-bg-color);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .loading__shape {
+    width: 60vw;
+    height: 60vh;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .loading__shape h1 {
+      color: #ffffff;
+      font-size: 64px;
+      font-family: var(--primary-font);
+      font-weight: 500;
+      line-height: 72px;
+      font-size: 64px; }

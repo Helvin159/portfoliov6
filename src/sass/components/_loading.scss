@@ -1,0 +1,32 @@
+.loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--primary-bg-color);
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	&__shape {
+		width: 60vw;
+		height: 60vh;
+		border-radius: 50%;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		& h1 {
+			@include heading-one;
+			font-size: 64px;
+		}
+	}
+}

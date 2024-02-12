@@ -10,7 +10,7 @@ const Header = ({ lastName }) => {
 	const { isOpen, setIsOpen } = useContext(MobileMenuContext);
 	const { avatarUrl } = useContext(UserContext);
 
-	avatarUrl && console.log(avatarUrl, 'header');
+	// avatarUrl && console.log(avatarUrl, 'header');
 
 	const navigate = useNavigate();
 	const handleOnClick = () => {

@@ -28,9 +28,9 @@ const MoreProjectsGallery = ({ projects }) => {
 								</p>
 							</div>
 							<div className='featured__gallery__items__item__details__services'>
-								<span>UX Design</span>
-								<span>UI Design</span>
-								<span>UI Development</span>
+								{i.languages.slice(0, 3).map((i, k) => (
+									<span key={k}>{i.lang}</span>
+								))}
 							</div>
 						</div>
 						<div className='overlay more-projects'>
