@@ -13,12 +13,24 @@
 			width: 100%;
 			margin: 0 auto;
 
+			@media (max-width: 768px) {
+				flex-direction: column;
+				flex-wrap: wrap;
+			}
 			&__input-group {
 				width: calc(100% / 2);
 				max-width: 600px;
 				margin: 0 auto;
 				flex: calc(100% / 2);
 				padding: 0 2rem;
+
+				@media (max-width: 768px) {
+					max-width: 95%;
+					width: 100%;
+					flex: 100%;
+					margin: 0 auto;
+				}
+
 				& h2,
 				h3 {
 					@include title3;
@@ -39,6 +51,24 @@
 
 				& button {
 					@include footer-btn;
+				}
+
+				&__languages {
+					& label {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						max-width: 95%;
+
+						& img {
+							max-height: 30px;
+							max-width: 30px;
+							height: 100%;
+							width: 100%;
+							cursor: pointer;
+							@include object-fit-rules;
+						}
+					}
 				}
 			}
 		}

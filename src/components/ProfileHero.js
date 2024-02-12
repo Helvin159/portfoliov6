@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react';
 
-import headerImg from '../assets/png/Image.png';
+import headerImg from '../assets/img/IMG_8273.JPG';
 
-const ProfileHero = ({ avatarUrl, user }) => {
-	// console.log(user);
+const ProfileHero = ({ avatarUrl, user, headline }) => {
 	return (
 		<Fragment>
 			<div className='profile__header'>
@@ -17,7 +16,7 @@ const ProfileHero = ({ avatarUrl, user }) => {
 						</div>
 						<div className='profile__header__details__user__name'>
 							<h2>{user ? user.displayName : 'loading'}</h2>
-							<p>Passionate front-end developer</p>
+							<p>{headline ? headline : 'loading'}</p>
 						</div>
 					</div>
 					<div className='profile__header__details__btn-group'>
