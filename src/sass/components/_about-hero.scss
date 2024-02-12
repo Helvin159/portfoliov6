@@ -35,10 +35,10 @@
 				@include heading-one;
 				margin: 0;
 				margin-bottom: 0.1rem;
-
 				@include tablet-heading-one;
 
 				@include mobile-heading-one;
+				text-transform: uppercase;
 			}
 
 			& p {
