@@ -6,15 +6,18 @@ import ProfileBody from '../components/ProfileBody/ProfileBody';
 import { ProjectsContext } from '../contexts/ProjectsContext';
 import { PortfolioContext } from '../contexts/PortfolioContext';
 import Loading from '../components/Loading';
+import Hero from '../components/Hero';
+import { useNavigate } from 'react-router';
 
 const Profile = () => {
-	const { user, avatarUrl } = useContext(UserContext);
+	const { user, isAdmin, avatarUrl } = useContext(UserContext);
 	const { projects } = useContext(ProjectsContext);
 	const { portfolio } = useContext(PortfolioContext);
+	const navigate = useNavigate();
 
 	useEffect(() => {}, [user, avatarUrl, projects, portfolio]);
 
-	if (!user || !avatarUrl) {
+	if (!user) {
 		return (
 			<Fragment>
 				<Loading />
@@ -38,6 +41,10 @@ const Profile = () => {
 		);
 	}
 
+	if (!isAdmin) {
+		setTimeout(() => navigate('/'), 5000);
+		return <Hero text="Oops, you're not an admin." />;
+	}
 	return (
 		<Fragment>
 			<ProfileHero

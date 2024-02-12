@@ -911,7 +911,8 @@ main {
         font-weight: 500;
         line-height: 72px;
         margin: 0;
-        margin-bottom: 0.1rem; }
+        margin-bottom: 0.1rem;
+        text-transform: uppercase; }
         @media (max-width: 768px) {
           .about__hero__profile__bio h1 {
             font-size: 38px;
