@@ -43,7 +43,7 @@ const Profile = () => {
 			<ProfileHero
 				avatarUrl={avatarUrl}
 				user={user}
-				headline={portfolio.headline_one}
+				headline={portfolio.headline_two}
 			/>
 			<ProfileBody projects={projects} />
 		</Fragment>
