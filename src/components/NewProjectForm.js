@@ -84,17 +84,7 @@ const NewProjectForm = () => {
 			url: `${genInfo?.current[1].value}`,
 		};
 
-		try {
-			await addDocToCollection(process.env.REACT_APP_COLLECTION_ID, project);
-
-			console.log('success');
-			setTimeout(() => {
-				window.scrollTo(0, 0);
-				window.location.reload();
-			}, 1000);
-		} catch (e) {
-			console.log(e, 'error');
-		}
+		await addDocToCollection(process.env.REACT_APP_COLLECTION_ID, project);
 	};
 
 	return (
