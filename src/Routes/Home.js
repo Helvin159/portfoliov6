@@ -24,7 +24,7 @@ const Home = () => {
 					awardCount={portfolio?.award_count}
 					clientCount={portfolio?.client_count}
 				/>
-				<Testimonial />
+				{/* <Testimonial /> */}
 				<Services services={portfolio?.services} />
 				<FeaturedGallery projects={projects} />
 			</Fragment>
