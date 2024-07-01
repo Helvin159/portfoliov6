@@ -1,6 +1,6 @@
 import React, { Fragment, useContext, useEffect } from 'react';
 import HomeHero from '../components/HomeHero/HomeHero';
-import Testimonial from '../components/HomeTestimonial';
+// import Testimonial from '../components/HomeTestimonial';
 import Services from '../components/Services';
 import FeaturedGallery from '../components/FeaturedGallery';
 import { PortfolioContext } from '../contexts/PortfolioContext';
@@ -24,7 +24,7 @@ const Home = () => {
 					awardCount={portfolio?.award_count}
 					clientCount={portfolio?.client_count}
 				/>
-				<Testimonial />
+				{/* <Testimonial /> */}
 				<Services services={portfolio?.services} />
 				<FeaturedGallery projects={projects} />
 			</Fragment>
