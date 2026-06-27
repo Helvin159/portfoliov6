@@ -1,25 +1,39 @@
-# My Portfolio
+# Portfolio
 
-Welcome to my portfolio! This project serves as a showcase of my work, personal style, and front-end development capabilities. Please note that it is currently a work in progress.
+Helvin Rymer's portfolio site, rebuilt with Next.js App Router, React, TypeScript,
+Payload CMS, MongoDB Atlas, and Firebase Storage.
 
-## Technologies Used
+## Development
 
-- React
-- Node Sass
-- (Potential) Bootstrap or Tailwind CSS
-- Google Firebase (NoSQL database)
-- Google Cloud Services (Content hosting)
-- EmailJS (For contact form)
+Use `pnpm` for all project commands.
 
-## Features (Planned)
+```sh
+pnpm install
+pnpm dev
+```
 
-- Showcase of my projects
-- Personal style representation
-- Responsive design
-- Interactive elements
+The public site runs at `/`. Payload admin runs at `/admin`.
 
-## How to Contribute
+## Useful Commands
 
-Feel free to contribute to the project by providing feedback or suggestions. Your input is highly valued!
+```sh
+pnpm generate:types
+pnpm generate:importmap
+pnpm typecheck
+pnpm test
+pnpm build
+```
 
-Stay tuned & Happy coding! 🚀
+Migration commands:
+
+```sh
+pnpm migration:export:firestore
+pnpm migration:validate
+pnpm migration:import -- --dry-run
+pnpm migration:import
+```
+
+## Deployment
+
+See [Deployment and Operations Runbook](docs/deployment.md) for MongoDB Atlas setup, Firebase
+setup, environment variables, admin workflow, rollback/export steps, and hosting assumptions.

@@ -1,0 +1,49 @@
+// Constants
+import { DEFAULT_LOCATION, HOME_HERO_IMAGE_URL } from '@/modules/site/constants/media'
+
+// Types
+import type { SiteSettings } from '@/modules/site/types/content'
+
+type HomeHeroProps = {
+	siteSettings: SiteSettings | null
+}
+
+export function HomeHero({ siteSettings }: HomeHeroProps) {
+	const headline = siteSettings?.headlines?.[0]?.copy ?? 'Helvin Rymer'
+	const description =
+		siteSettings?.headlines?.[1]?.copy ??
+		'Front-end developer building polished, content-managed web experiences.'
+	const stats = siteSettings?.stats ?? []
+	const location = siteSettings?.contactInfo?.location ?? DEFAULT_LOCATION
+
+	return (
+		<section className="hero__container">
+			<div className="hero__container__location">
+				<p>{location}</p>
+			</div>
+			<div className="hero__container__main">
+				<div className="hero__container__main__header">
+					<h1>{headline}</h1>
+					<p>{description}</p>
+				</div>
+				{HOME_HERO_IMAGE_URL ? (
+					<div className="hero__container__main__img">
+						<img src={HOME_HERO_IMAGE_URL} alt={`${siteSettings?.name ?? 'Helvin Rymer'} portrait`} />
+					</div>
+				) : null}
+			</div>
+			{stats.length > 0 ? (
+				<div className="hero__container__main__stats">
+					{stats.map((stat) => (
+						<div className="stat" key={stat.id ?? stat.label}>
+							<div className="stat__copy">
+								<h3>{stat.value}</h3>
+								<p>{stat.label}</p>
+							</div>
+						</div>
+					))}
+				</div>
+			) : null}
+		</section>
+	)
+}
