@@ -1,7 +1,5 @@
 // Components
 import Image from 'next/image';
-// Constants
-import { DEFAULT_LOCATION } from '@/modules/site/constants/media';
 
 // Types
 import type { SiteSettings } from '@/modules/site/types/content';
@@ -19,7 +17,7 @@ export function HomeHero({ siteSettings }: HomeHeroProps) {
     siteSettings?.headlines?.[1]?.copy ??
     'Front-end developer building polished, content-managed web experiences.';
   const stats = siteSettings?.stats ?? [];
-  const location = siteSettings?.contactInfo?.location ?? DEFAULT_LOCATION;
+  const location = siteSettings?.contactInfo?.location;
 
   return (
     <section className='hero__container'>
