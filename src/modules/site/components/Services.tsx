@@ -1,26 +1,31 @@
 // Types
-import type { SiteSettings } from '@/modules/site/types/content'
+import type { SiteSettings } from '@/modules/site/types/content';
+import Image from 'next/image';
+
+import iconAngleUp from '@/assets/svg/icon-angle-up.svg';
 
 type ServicesProps = {
-	services: SiteSettings['services']
-}
+  services: SiteSettings['services'];
+};
 
 export function Services({ services }: ServicesProps) {
-	if (!services?.length) {
-		return null
-	}
+  if (!services?.length) {
+    return null;
+  }
 
-	return (
-		<section className="services">
-			<p className="services__title">// My Services</p>
-			<div className="services__blocks">
-				{services.map((service) => (
-					<div className="service" key={service.id ?? service.title}>
-						<span aria-hidden="true">^</span>
-						<p>{service.title}</p>
-					</div>
-				))}
-			</div>
-		</section>
-	)
+  return (
+    <section className='services'>
+      <p className='services__title'>// My Services</p>
+      <div className='services__blocks'>
+        {services.map((service) => (
+          <div className='service' key={service.id ?? service.title}>
+            <span>
+              <Image src={iconAngleUp.src} width={64} height={64} alt='' />
+            </span>
+            <p>{service.title}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }

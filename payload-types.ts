@@ -549,6 +549,12 @@ export interface SiteSetting {
         id?: string | null;
       }[]
     | null;
+  aboutHeadlines?:
+    | {
+        copy: string;
+        id?: string | null;
+      }[]
+    | null;
   aboutCopy?:
     | {
         copy: string;
@@ -612,6 +618,12 @@ export interface SiteSettingsSelect<T extends boolean = true> {
   role?: T;
   specialty?: T;
   headlines?:
+    | T
+    | {
+        copy?: T;
+        id?: T;
+      };
+  aboutHeadlines?:
     | T
     | {
         copy?: T;
