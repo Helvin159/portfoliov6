@@ -1,14 +1,13 @@
+// Components
+import Image from 'next/image';
 // Constants
-import {
-  DEFAULT_LOCATION,
-  HOME_HERO_IMAGE_URL
-} from '@/modules/site/constants/media';
+import { DEFAULT_LOCATION } from '@/modules/site/constants/media';
 
 // Types
 import type { SiteSettings } from '@/modules/site/types/content';
 
 import mapIcon from '@/assets/svg/icon-map.svg';
-import Image from 'next/image';
+import homeImage from '@/assets/img/IMG_20160902_144507.jpg';
 
 type HomeHeroProps = {
   siteSettings: SiteSettings | null;
@@ -37,10 +36,10 @@ export function HomeHero({ siteSettings }: HomeHeroProps) {
           <h1>{headline}</h1>
           <p>{description}</p>
         </div>
-        {HOME_HERO_IMAGE_URL ? (
+        {homeImage.src ? (
           <div className='hero__container__main__img'>
             <img
-              src={HOME_HERO_IMAGE_URL}
+              src={homeImage.src}
               alt={`${siteSettings?.name ?? 'Helvin Rymer'} portrait`}
             />
           </div>

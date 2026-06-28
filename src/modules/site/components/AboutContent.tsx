@@ -1,8 +1,7 @@
-// Constants
-import { ABOUT_PROFILE_IMAGE_URL } from '@/modules/site/constants/media';
-
 // Types
 import type { SiteSettings } from '@/modules/site/types/content';
+// Assets
+import aboutImage from '@/assets/img/IMG_0815.jpg';
 
 type AboutContentProps = {
   siteSettings: SiteSettings | null;
@@ -38,10 +37,10 @@ export function AboutContent({ siteSettings }: AboutContentProps) {
           </div>
         ) : null}
       </div>
-      {ABOUT_PROFILE_IMAGE_URL ? (
+      {aboutImage.src ? (
         <div className='about__hero__profile__img'>
           <img
-            src={ABOUT_PROFILE_IMAGE_URL}
+            src={aboutImage.src}
             alt={`${siteSettings?.name ?? 'Helvin Rymer'} portrait`}
           />
         </div>
