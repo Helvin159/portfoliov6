@@ -10,6 +10,8 @@
 
 # production
 /build
+/.next
+*.tsbuildinfo
 
 # misc
 .DS_Store
@@ -24,3 +26,7 @@ yarn-error.log*
 
 
 .env
+
+./.codex
+.codex
+private

@@ -1,0 +1,33 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isPayloadAdminUpload(allowedPathPrefix) {
+      return request.auth != null
+        && request.auth.token.payloadAdmin == true
+        && request.auth.token.allowedPathPrefix == allowedPathPrefix;
+    }
+
+    match /projects/{projectSlug}/screenshots/{orientation}/{fileName} {
+      allow read: if true;
+      allow write: if isPayloadAdminUpload('projects/' + projectSlug + '/screenshots/' + orientation + '/')
+        && (orientation == 'landscape' || orientation == 'portrait')
+        && request.resource.size <= 20971520
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    match /projects/{projectSlug}/posters/{fileName} {
+      allow read: if true;
+      allow write: if isPayloadAdminUpload('projects/' + projectSlug + '/posters/')
+        && request.resource.size <= 20971520
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    match /projects/{projectSlug}/videos/{fileName} {
+      allow read: if true;
+      allow write: if isPayloadAdminUpload('projects/' + projectSlug + '/videos/')
+        && request.resource.size <= 262144000
+        && request.resource.contentType.matches('video/.*');
+    }
+  }
+}
