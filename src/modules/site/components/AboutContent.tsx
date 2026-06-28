@@ -1,7 +1,7 @@
 // Types
 import type { SiteSettings } from '@/modules/site/types/content';
 // Assets
-import aboutImage from '@/assets/img/IMG_0815.jpg';
+import aboutImage from '@/assets/img/IMG_0815.JPG';
 
 type AboutContentProps = {
   siteSettings: SiteSettings | null;

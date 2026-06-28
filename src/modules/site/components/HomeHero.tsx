@@ -5,7 +5,7 @@ import Image from 'next/image';
 import type { SiteSettings } from '@/modules/site/types/content';
 
 import mapIcon from '@/assets/svg/icon-map.svg';
-import homeImage from '@/assets/img/IMG_20160902_144507.jpg';
+import homeImage from '@/assets/img/IMG_20160902_144507.JPG';
 
 type HomeHeroProps = {
   siteSettings: SiteSettings | null;
