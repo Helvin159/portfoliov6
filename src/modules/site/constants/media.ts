@@ -1,5 +1,5 @@
-import aboutImage from '@/assets/img/IMG_0815.jpg';
-import homeImage from '@/assets/img/IMG_20160902_144507.jpg';
+import aboutImage from '../../../src/assets/img/IMG_0815.jpg';
+import homeImage from '../../../assets/img/IMG_20160902_144507.jpg';
 
 const homeHeroImageUrl = process.env.NEXT_PUBLIC_HOME_HERO_IMAGE_URL?.trim();
 const aboutProfileImageUrl =
